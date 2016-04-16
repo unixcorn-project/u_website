@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Nouvelles | Unixcorn Project</title>
+  <meta name="description" content="Unixcorn.org, le site web des licornes fanatiques. Nous proposons de l'hébergement et des services web à prix libre mais non gratuit. Le tout propulsé par des technologies libres et respectueuses de la philosophie d'UNIX.">
+  <meta name="author" content="Unixcorn staff">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="apple-touch-icon" sizes="57x57" href="images/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="images/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="images/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="images/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="images/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="images/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon-180x180.png">
+  <link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="images/android-chrome-192x192.png" sizes="192x192">
+  <link rel="icon" type="image/png" href="images/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="images/favicon-16x16.png" sizes="16x16">
+  <link rel="manifest" href="images/manifest.json">
+  <link rel="shortcut icon" href="images/favicon.ico">
+  <meta name="msapplication-TileColor" content="#603cba">
+  <meta name="msapplication-TileImage" content="images/mstile-144x144.png">
+  <meta name="msapplication-config" content="images/browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
+
+  <!-- Piwik
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script type="text/javascript">
+    var _paq = _paq || [];
+    _paq.push(["setDomains", ["*.unixcorn.org"]]);
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function() {
+    var u="//stats.unixcorn.org/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', 3]);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+    })();
+  </script>
+<noscript><p><img src="//stats.unixcorn.org/piwik.php?idsite=3" style="border:0;" alt="" /></p></noscript>
+
+</head>
+<body>
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="container" style="margin-top: 1%">
+  		<center><a href="http://unixcorn.org"><img src="images/wide_banner.png"></a></center>
+    <div class="row">
+    	<h3>Nouvelles</h3>
+	<div class="row">
+                <h5>2016/04/16 - Migration logicielle</h5>
+        	<p>Une maintenance préventive a été effectuée hier et aura durée plus longtemps que prévu, au menu de nombreuses migrations logicielles (notamment d'anciennes version de PHP ou encore de MySQL à MariaDB). Malheureusement en cours de remise en route la sauvegarde de la base de donnée du cloud a été corrompue, de ce fait il faudra vous réinscrire sur le clou y réenvoyer vos données. Si jamais vous avez perdu les données qui étaient sur le cloud merci de prendre contact avec nous, nous vous renverrons une archive de celles-ci. De même nous avons abaissé les quotas alloués au niveau du stockage, maintenant vous n'avez plus que 1 Go de base au lieu de 5 Go. Pour rappel il est toujours possible de demander plus d'espace !</p>
+	</div>
+	<div class="row">
+        	<h5>2016/03/26 - Migration matérielle</h5>
+        	<p>Une grande partie des services auront été indisponibles ce week-end, en cause une migration matérielle vers un nouveau serveur dédié plus puissant, doté de plus de stockage. Ça a été l'occasion de passer de Debian 8 GNU/Linux à FreeBSD 10.2, causant au passage tout de même pas mal de soucis de compatibilité entre les différentes configurations logicielles. Les services de forge logicielle (Gitlab) et de réseau social (Diaspora) (que vous avez peut-être pu tester les jours précédents) ne sont pas encore remontés, le forum a été complètement réinstallé et il faudra vous réinscrire.</p>
+        </div>
+	<div class="row">
+		<h5>2016/03/25 - Mise en place de cette page</h5>
+		<p>Mise en place de cette page d'information, ici vous pourrez suivre les dernières nouvelles techniques liées au projet et son infrastructure. Cette page dédiée se veut complémentaire à celle donnant l'<a href="http://status.unixcorn.org">état en temps réel</a> des services, vous aurez droit à quelques explications détaillées sur les opérations à venir, en cours ou passées.</p>
+	</div> 
+    </div>
+    <div class="row">
+	<center><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png" /></a><br />© 2015-2016 <a href="https://unixcorn.org">Unixcorn Project</a></center>
+  </div>
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>
