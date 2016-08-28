@@ -21,6 +21,7 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
 
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -47,17 +48,17 @@
   <!-- Piwik
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <script type="text/javascript">
-    var _paq = _paq || [];
-    _paq.push(["setDomains", ["*.unixcorn.org"]]);
-    _paq.push(['trackPageView']);
-    _paq.push(['enableLinkTracking']);
-    (function() {
-    var u="//stats.unixcorn.org/";
-    _paq.push(['setTrackerUrl', u+'piwik.php']);
-    _paq.push(['setSiteId', 3]);
-    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
-    })();
+	var _paq = _paq || [];
+	_paq.push(["setDomains", ["*.unixcorn.org"]]);
+	_paq.push(['trackPageView']);
+	_paq.push(['enableLinkTracking']);
+	(function() {
+	var u="//stats.unixcorn.org/";
+	_paq.push(['setTrackerUrl', u+'piwik.php']);
+	_paq.push(['setSiteId', 3]);
+	var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+	g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+	})();
   </script>
 <noscript><p><img src="//stats.unixcorn.org/piwik.php?idsite=3" style="border:0;" alt="" /></p></noscript>
 
@@ -66,79 +67,86 @@
 
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <div class="container" style="margin-top: 1%">
-  		<center><a href="http://unixcorn.org"><img style="max-width: 70%" src="images/wide_banner.png"></a></center>
-    <div class="row">
-    	<h4>Bonjour !</h4>
-              <p>Bienvenue sur ce site web, ici vous allez pouvoir bénéficier de services éthiques divers et multiples, un peu comme ce que font nos amis de <a href="http://framasoft.net">Framasoft</a>. Notre but étant avant tout de cibler les utilisateur-ice-s initié-e-s aux enjeux liés à l'Internet et les problématiques inhérentes à l'intégrité des données.</p>
-              <p>Les services que vous trouverez ici sont respectueux de votre vie privée et donc construits avec du logiciel libre. Nos serveurs reposent sur l'architecture x86_64, ceux-ci sont loués chez <a href="http://online.net" target="blank">une entreprise française</a> dont le matériel est hébergé à Paris dans un <em>data-center</em> de qualité.</p>
-    </div>
-    <div class="row">
-	          <center><h4>Services</h4>
-                  <a class="button" href="http://cloud.unixcorn.org">Plateforme cloud</a>
-                  <a class="button" href="http://git.unixcorn.org">Forge logicielle Git</a>
-		  <a class="button" href="http://forum.unixcorn.org">Forum de discussion</a>
-		  <a class="button" href="http://social.unixcorn.org">Réseau social</a>
-                  <a class="button" href="http://wiki.unixcorn.org">Documentation</a>
-		  <a class="button" href="http://paste.unixcorn.org">Partage de presse-papier</a>
-                  <a class="button" href="http://pix.unixcorn.org">Hébergement d'images</a>
-                  <a class="button" href="irc.html">Salon de chat IRC</a>
-        	</center>
-    </div>
-    <div class="row">
-    	<div class="one-half column" style="margin-top: 5%">
-		<h4>Que proposons nous ?</h4>
-		<ul>
-			<li>1 Go d'espace (extensible sur demande) sur notre plateforme cloud basée sur ownCloud.</li>
-			<li>Une forge logicielle pour héberger vos projets personnels et travailler sereinement en équipe.</li>
-			<li>Notre réseau social sur le web, basé sur des standards du W3C. Vous pouvez vous y inscrire puis lier vos comptes Facebook et Twitter qui seront tenus à jour.</li> 
-			<li>Un forum de discussion pour régler les éventuels soucis, travailler sur les projets futurs et tout simplement faire vivre notre communauté.</li>
-			<li>Un service d'hébergement d'images (publiques et privées) que vous pouvez facilement insérer dans le forum ou partager sur IRC.</li>
-			<li>Un service de partage de presse-papier pour partager facilement vos configurations, votre code ou vos logs.</li>
-			<li>Un client web pour se connecter à notre salon de chat ou n'importe quel réseau IRC.</li>
-		</ul>
-		<p>N'oubliez pas de jeter un oeil à nos conditions générales d'utilisations, elles sont courtes et facilement compréhensibles.</p>
-		<center><a class="button button-primary" href="http://unixcorn.org/rules.html">Règles d'utilisation</a></center>
-	</div>
-	<div class="one-half column" style="margin-top: 5%">
-               <h4>À quel prix ?</h4>
-               <p>L'accès à ces services se fait à prix libre. Le budget de fonctionnement actuel de l'ensemble tourne autour des 50€ par mois, sans compter bien-sûr les longues heures passées à travailler sur l'infrastructure et les logiciels.</p>
-               <p>Avec ce fonctionnement vous êtes libre de gérer comme vous désirez votre payement, une fois par mois, une fois par an, la somme que vous désirez, celle semblant la plus juste. Rien n'est obligé, vous êtes seul-e juge de votre conscience.</p>
-		<p>Pour recevoir vos dons nous avons choisi de faire confiance au projet <a href="https://liberapay.com">Liberapay</a>, vous pouvez faire un don en cliquant sur le bouton en bas de ce paragraphe. Aussi nous pouvons recevoir les chèques (dans ce cas merci de nous contacter) et <a href="/images/coordonnees_bancaires.png">les virements bancaires</a>.</p>
-		<center><script src="https://fr.liberapay.com/matunixe/widgets/receiving.js"></script></center>
-      	</div>
-   </div>
-   <div class="row">
-	<div class="one-half column" style="margin-top: 3%">
-		<h4>Contact</h4>
-                <p><a href="https://matuni.xyz">Mathias</a> est l'administrateur du projet, venez le rencontrer lui et les autres contributeur-ice-s sur le salon de chat IRC et n'hésitez pas à nous  <a href="mailto:root@unixcorn.org?subject=Coucou les licornes !">envoyer un e-mail</a> !</p>
-	</div>
-	<div class="one-half column" style="margin-top: 3%">
-		<h4>Support</h4>
-                <p>Si vous rencontrez un problème deux solutions s'offrent à vous : nous rejoindre sur le salon de chat IRC ou exposer votre souci sur le forum. Pour vérifier la disponibilité des services proposés jetez un oeil au fil d'informations :</p>
-                <center><a class="button button-primary" href="http://status.unixcorn.org">État de la plateforme</a></center>
-	</div>
-    </div>
-    <div class="row" style="margin-top: 1%">
-        <h4>Sponsors et projets supportés</h4>
-		<div class="one-third column" style="margin-left: 2%; margin-top: 2%">
-                        <center><a href="https://proxmox.com/en/"><img style="max-width: 60%" src="https://www.proxmox.com/images/proxmox/proxmox-logo.png"></a></center>
-			<p>« Proxmox Virtual Environment » est une solution complète de virtualisation, basée sur KVM et les conteneurs LXC. Notre entière infrastructure repose sur ces technologies open-source, Proxmox contribue doublement au projet Unixcorn en nous fournissant gracieusement des licences d'utilisation « Enterprise ».</p>
-	</div>
-		<div class="one-third column" style="margin-left: 2%">
-                        <center><a href="https://www.debian.org/index.fr.html"><img style="max-height: 10%" src="https://www.debian.org/logos/openlogo-nd-50.png"></a></center>
-                        <p>« Debian » GNU/Linux est un système d'exploitation libre dit universel. Il est utilisé à tous les niveaux dans notre infrastructure, sur nos serveurs (c'est la base de Proxmox) mais aussi dans chacune de nos machines virtuelles.</p>
-        </div>
-		<div class="one-third column" style="margin-left: 2%">
-                        <center><a href="https://letsencrypt.org"><img style="max-width: 60%" src="https://letsencrypt.org/images/letsencrypt-logo-horizontal.svg"></a></center>
-                        <p>« Let's Encrypt  » est une autorité de certification fournissant des certificats X.509 gratuits pour le protocole TLS. L'ensemble de nos services et sites internet reposent sur des certificats fournis par le projet Let's Encrypt, qui a au passage réellement démocratisé la mise en place du protocole TLS au sein des infrastructures.</p>
-        </div>
-  </div> 
-    <div class="row" style="margin-top: 3%">
-	<center><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png" /></a><br />© 2015-2016 <a href="https://unixcorn.org">Unixcorn Project</a></center>
-  </div>
+	<div class="container" style="margin-top: 0">
+		<center><a href="http://unixcorn.org"><img style="max-width: 70%" src="images/wide_banner.png"></a></center>
+		<div class="row">
+			  <p>Unixcorn fournit des services respectueux de votre vie privée et donc construits avec du logiciel libre, dans la lignée de <a href="http://framasoft.net">Framasoft</a>. Nos serveurs sont loués chez <a href="http://online.net" target="blank">une entreprise française</a> dont le matériel est hébergé à Paris dans un <em>data-center</em> de qualité.</p>
+		</div>
+	
+		<h3 style="display: none;">Services</h3>
+		<div class="row" style="text-align: center;">
+			<div class="one-third column" style="margin-left: 2%;">
+				<h4>Coopération</h4>
+				<a class="button" href="https://paste.unixcorn.org" style="padding-left: 1em;"><i class="fa fa-clipboard fa-2x" style="vertical-align: middle;"></i>&nbsp;&nbsp;&nbsp;&nbsp;Partage de texte</a>
+			  	<br><a class="button" href="https://pix.unixcorn.org" style="padding-left: 1em;"><i class="fa fa-picture-o fa-2x" style="vertical-align: middle;"></i>&nbsp;&nbsp;&nbsp;&nbsp;Partage d'images</a>
+			</div>
+			<div class="one-third column" style="margin-left: 2%;">
+				<h4>Social</h4>
+				<a class="button" href="https://cloud.unixcorn.org" style="padding-left: 1em;"><i class="fa fa-cloud fa-2x" style="vertical-align: middle;"></i>&nbsp;&nbsp;&nbsp;&nbsp;Cloud</a>
+	  			<br><a class="button" href="https://social.unixcorn.org" style="padding-left: 1em;"><i class="fa fa-users fa-2x" style="vertical-align: middle;"></i>&nbsp;&nbsp;&nbsp;&nbsp;Réseau social</a>		
+			</div>
+			<div class="one-third column" style="margin-left: 2%;">
+				<h4>Développement</h4>
+				<a class="button" href="https://git.unixcorn.org" style="padding-left: 1em;"><i class="fa fa-code-fork fa-2x" style="vertical-align: middle;"></i>&nbsp;&nbsp;&nbsp;&nbsp;Forge (Gitlab)</a>
+			</div>
+		</div>
+		<div class="row" style="text-align: center; margin-top: 1em;">
+			<div class="one-half column">
+				<h5><i class="fa fa-info-circle" style="vertical-align: middle;"></i>&nbsp;&nbsp;<a href="services.html">Plus d'infos</a> sur les offres et services.</h5>
+			</div>
+			<div class="one-half column">
+				<h5><i class="fa fa-cog" style="vertical-align: middle;"></i>&nbsp;&nbsp;<a href="https://status.unixcorn.org">État des services</a></h5>
+			</div>
+		</div>
 
+		<div class="row">
+			<div class="one-half column" style="margin-top: 3%">
+				<h4 style="text-align: center;">Documentation &amp; Support</h4>
+				Si vous avez une question ou un problème, n'hésitez pas à lire notre documentation ou à nous contacter.
+				<table>				
+					<tr>
+						<td><i class="fa fa-book fa-2x" style="vertical-align: middle;"></i></td>
+						<td><a href="https://wiki.unixcorn.org">Documentation</a> (wiki)</td>
+					</tr>
+					<tr>
+						<td><i class="fa fa-comments-o fa-2x" style="vertical-align: middle;"></i></td>
+						<td><a href="http://forum.unixcorn.org">Forum de discussion</a></td>
+					</tr>
+					<tr>
+						<td><i class="fa fa-envelope fa-2x" style="vertical-align: middle;"></i></td>
+						<td><a href="mailto:root@unixcorn.org?subject=Coucou les licornes !">Mail</a> (root@unixcorn.org)</td>
+					</tr>
+				</table>
+			</div>
+			<div class="one-half column" style="margin-top: 3%">
+				<h4 style="text-align: center;">Contribuer</h4>
+				Unixcorn est un collectif autogéré où chacun⋅e peut participer&nbsp;:
+				<table>
+					<tr>
+						<td><i class="fa fa-pencil fa-2x"></i></td>
+						<td>En écrivant de la <a href="https://wiki.unixcorn.org">documentation</a></td>
+					</tr>
+					<tr>
+						<td><i class="fa fa-ambulance fa-2x"></i></td>
+						<td>En assurant du support sur le <a href="https://forum.unixcorn.org">forum</a></td>
+					</tr>
+					<tr>
+						<td><i class="fa fa-money fa-2x"></i></td>
+						<td>En faisant <a href="https://liberapay.com/matunixe/donate">un don régulier</a></td>
+					</tr>
+					<tr>
+						<td><i class="fa fa-retweet fa-2x"></i></td>
+						<td>En contribuant à d'autres projets qui <a href="https://degooglisons-internet.org/">degooglisent Internet</a> avec des <a href="https://chatons.org">CHATONS</a></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+ 
+		<div class="row" style="margin-top: 3%">
+			<center><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png" /></a><br />© 2015-2016 <a href="https://unixcorn.org">Unixcorn Project</a></center>
+		</div>
+	</div>
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-</body>
+	</body>
 </html>
