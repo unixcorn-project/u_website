@@ -107,7 +107,7 @@ ul.topnav li a {
 }
 
 /* Change background color of links on hover */
-ul.topnav li a:hover {background-color: #555;}
+ul.topnav li a:hover {color: #3ec4ee;}
 
 /* Hide the list item that contains the link that should open and close the topnav on small screens */
 ul.topnav li.icon {display: none;}
@@ -132,10 +132,10 @@ ul.topnav li.icon {display: none;}
   ul.topnav.responsive li {
     float: none;
     display: inline;
-	padding: 0;
   }
   ul.topnav.responsive li a {
     display: block;
     text-align: left;
+	padding: 0 0 0 1em;
   }
 }
