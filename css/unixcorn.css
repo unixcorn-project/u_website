@@ -84,16 +84,20 @@ ul.topnav {
 	vertical-align: middle;
 }
 
-ul.topnav li:first-child img {
-	background-color: white;
-	border-radius: 5px;
+ul.topnav li:first-child {
+	padding-right: 0;
+}
+
+ul.topnav li:first-child i {
+	color: #3ec4ee;
+	font-weight: bolder;
 }
 
 /* Float the list items side by side */
 ul.topnav li {
 	float: left;
 	margin: 0;
-	padding: 0.3em 1em 0em;
+	padding: 0 1em 0;
 }
 
 /* Style the links inside the list items */
@@ -104,6 +108,8 @@ ul.topnav li a {
     text-decoration: none;
     transition: 0.3s;
     font-size: 2rem;
+	font-variant: small-caps;
+	font-weight: bold;
 }
 
 /* Change background color of links on hover */
