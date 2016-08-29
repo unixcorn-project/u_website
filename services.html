@@ -63,11 +63,40 @@
   </script>
 <noscript><p><img src="//stats.unixcorn.org/piwik.php?idsite=3" style="border:0;" alt="" /></p></noscript>
 
-</head>
+
+		<!-- Top navigation bar, taken from http://www.w3schools.com/howto/howto_js_topnav.asp
+		–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+		<script type="text/javascript">
+			/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+			function toggleNav() {
+				var x = document.getElementById("myTopnav");
+				if (x.className === "topnav") {
+					x.className += " responsive";
+				} else {
+					x.className = "topnav";
+				}
+			}
+		</script>
+	</head>
 <body>
 
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+	<header>	
+		<ul class="topnav" id="myTopnav">
+			<li><a href="index.html"><img src="images/favicon-32x32.png" style="width: auto; height: auto;"></a></li>
+			<li><a href="index.html">Accueil</a></li>
+			<li><a href="#">Blog</a></li>
+			<li><a href="services.html">Services</a></li>
+			<li><a href="https://wiki.unixcorn.org">Wiki</a></li>
+			<li><a href="rules.html">CGU</a></li>
+			<li class="icon">
+				<a href="javascript:void(0);" onclick="toggleNav()">&#9776;</a>
+			</li>
+		</ul>
+	</header>
+
 	<div class="container">
 		<center><a href="http://unixcorn.org"><img style="max-width: 70%" src="images/wide_banner.png"></a></center>
 		<div class="row center featured">

@@ -21,6 +21,7 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/unixcorn.css">
 
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -61,19 +62,48 @@
   </script>
 <noscript><p><img src="//stats.unixcorn.org/piwik.php?idsite=3" style="border:0;" alt="" /></p></noscript>
 
-</head>
+
+		<!-- Top navigation bar, taken from http://www.w3schools.com/howto/howto_js_topnav.asp
+		–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+		<script type="text/javascript">
+			/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+			function toggleNav() {
+				var x = document.getElementById("myTopnav");
+				if (x.className === "topnav") {
+					x.className += " responsive";
+				} else {
+					x.className = "topnav";
+				}
+			}
+		</script>
+	</head>
 <body>
 
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <div class="container" style="margin-top: 1%">
-  		<center><a href="https://unixcorn.org"><img style="max-width: 70%" src="images/wide_banner.png"></a></center>
+
+	<header>	
+		<ul class="topnav" id="myTopnav">
+			<li><a href="index.html"><img src="images/favicon-32x32.png" style="width: auto; height: auto;"></a></li>
+			<li><a href="index.html">Accueil</a></li>
+			<li><a href="#">Blog</a></li>
+			<li><a href="services.html">Services</a></li>
+			<li><a href="https://wiki.unixcorn.org">Wiki</a></li>
+			<li><a href="rules.html">CGU</a></li>
+			<li class="icon">
+				<a href="javascript:void(0);" onclick="toggleNav()">&#9776;</a>
+			</li>
+		</ul>
+	</header>
+
+  <div class="container center" style="margin-top: 1%">
+  		<a href="https://unixcorn.org"><img style="max-width: 70%" src="images/wide_banner.png"></a>
 		<div class="row">
-			      <h3>Salon de discussion IRC</h3>
-	   	<center><iframe src="https://webchat.freenode.net?channels=%23unixcorn&uio=ND10cnVlJjk9dHJ1ZSYxMj10cnVlJjEzPXRydWU4c" width="800" height="600"></iframe></center> 
+			<h3>Salon de discussion IRC</h3>
+			<iframe src="https://webchat.freenode.net?channels=%23unixcorn&uio=ND10cnVlJjk9dHJ1ZSYxMj10cnVlJjEzPXRydWU4c" width="800" height="600"></iframe>
 		</div>
 		
-		<div class="row center">
+		<div class="row">
 			<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="images/external/cc-by-nc-sa.png" /></a><br />© 2015-2016 <a href="https://unixcorn.org">Unixcorn Project</a>
 			<br><a class="button button-primary" href="http://unixcorn.org/rules.html">Conditions Générales d'Utilisations</a>
 		</div>

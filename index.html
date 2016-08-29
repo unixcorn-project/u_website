@@ -1,73 +1,100 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
+	<head>
+		<!-- Basic Page Needs
+		–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+		<meta charset="utf-8">
+		<title>Accueil | Unixcorn Project</title>
+		<meta name="description" content="Unixcorn.org, site web de licornes fanatiques. Hébergement et services web à prix libre mais non gratuit. Le tout propulsé par des technologies libres et respectueuses de votre vie privée.">
+		<meta name="author" content="Unixcorn staff">
 
-  <!-- Basic Page Needs
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <meta charset="utf-8">
-  <title>Accueil | Unixcorn Project</title>
-  <meta name="description" content="Unixcorn.org, site web de licornes fanatiques. Hébergement et services web à prix libre mais non gratuit. Le tout propulsé par des technologies libres et respectueuses de votre vie privée.">
-  <meta name="author" content="Unixcorn staff">
+		<!-- Mobile Specific Metas
+		–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- Mobile Specific Metas
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- FONT
+		–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+		<link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
 
-  <!-- FONT
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+		<!-- CSS
+		–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/skeleton.css">
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/unixcorn.css">
 
-  <!-- CSS
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/skeleton.css">
-  <link rel="stylesheet" href="css/font-awesome.min.css">
-  <link rel="stylesheet" href="css/unixcorn.css">
+		<!-- Favicon
+		–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+		<link rel="apple-touch-icon" sizes="57x57" href="images/apple-touch-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="60x60" href="images/apple-touch-icon-60x60.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="images/apple-touch-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="images/apple-touch-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="images/apple-touch-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="images/apple-touch-icon-152x152.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon-180x180.png">
+		<link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32">
+		<link rel="icon" type="image/png" href="images/android-chrome-192x192.png" sizes="192x192">
+		<link rel="icon" type="image/png" href="images/favicon-96x96.png" sizes="96x96">
+		<link rel="icon" type="image/png" href="images/favicon-16x16.png" sizes="16x16">
+		<link rel="manifest" href="images/manifest.json">
+		<link rel="shortcut icon" href="images/favicon.ico">
+		<meta name="msapplication-TileColor" content="#603cba">
+		<meta name="msapplication-TileImage" content="images/mstile-144x144.png">
+		<meta name="msapplication-config" content="images/browserconfig.xml">
+		<meta name="theme-color" content="#ffffff">
 
-  <!-- Favicon
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="apple-touch-icon" sizes="57x57" href="images/apple-touch-icon-57x57.png">
-  <link rel="apple-touch-icon" sizes="60x60" href="images/apple-touch-icon-60x60.png">
-  <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
-  <link rel="apple-touch-icon" sizes="76x76" href="images/apple-touch-icon-76x76.png">
-  <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
-  <link rel="apple-touch-icon" sizes="120x120" href="images/apple-touch-icon-120x120.png">
-  <link rel="apple-touch-icon" sizes="144x144" href="images/apple-touch-icon-144x144.png">
-  <link rel="apple-touch-icon" sizes="152x152" href="images/apple-touch-icon-152x152.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon-180x180.png">
-  <link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32">
-  <link rel="icon" type="image/png" href="images/android-chrome-192x192.png" sizes="192x192">
-  <link rel="icon" type="image/png" href="images/favicon-96x96.png" sizes="96x96">
-  <link rel="icon" type="image/png" href="images/favicon-16x16.png" sizes="16x16">
-  <link rel="manifest" href="images/manifest.json">
-  <link rel="shortcut icon" href="images/favicon.ico">
-  <meta name="msapplication-TileColor" content="#603cba">
-  <meta name="msapplication-TileImage" content="images/mstile-144x144.png">
-  <meta name="msapplication-config" content="images/browserconfig.xml">
-  <meta name="theme-color" content="#ffffff">
+		<!-- Piwik
+		–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	    <script type="text/javascript">
+			var _paq = _paq || [];
+			_paq.push(["setDomains", ["*.unixcorn.org"]]);
+			_paq.push(['trackPageView']);
+			_paq.push(['enableLinkTracking']);
+			(function() {
+			var u="//stats.unixcorn.org/";
+			_paq.push(['setTrackerUrl', u+'piwik.php']);
+			_paq.push(['setSiteId', 3]);
+			var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+			g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+			})();
+	    </script>
+		<noscript><p><img src="//stats.unixcorn.org/piwik.php?idsite=3" style="border:0;" alt="" /></p></noscript>
 
-  <!-- Piwik
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <script type="text/javascript">
-	var _paq = _paq || [];
-	_paq.push(["setDomains", ["*.unixcorn.org"]]);
-	_paq.push(['trackPageView']);
-	_paq.push(['enableLinkTracking']);
-	(function() {
-	var u="//stats.unixcorn.org/";
-	_paq.push(['setTrackerUrl', u+'piwik.php']);
-	_paq.push(['setSiteId', 3]);
-	var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-	g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
-	})();
-  </script>
-<noscript><p><img src="//stats.unixcorn.org/piwik.php?idsite=3" style="border:0;" alt="" /></p></noscript>
-
-</head>
+		<!-- Top navigation bar, taken from http://www.w3schools.com/howto/howto_js_topnav.asp
+		–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+		<script type="text/javascript">
+			/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+			function toggleNav() {
+				var x = document.getElementById("myTopnav");
+				if (x.className === "topnav") {
+					x.className += " responsive";
+				} else {
+					x.className = "topnav";
+				}
+			}
+		</script>
+	</head>
 <body>
 
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+	<header>	
+		<ul class="topnav" id="myTopnav">
+			<li><a href="index.html"><img src="images/favicon-32x32.png" style="width: auto; height: auto;"></a></li>
+			<li><a href="index.html">Accueil</a></li>
+			<li><a href="#">Blog</a></li>
+			<li><a href="services.html">Services</a></li>
+			<li><a href="https://wiki.unixcorn.org">Wiki</a></li>
+			<li><a href="rules.html">CGU</a></li>
+			<li class="icon">
+				<a href="javascript:void(0);" onclick="toggleNav()">&#9776;</a>
+			</li>
+		</ul>
+	</header>
+
 	<div class="container">
 		<center><a href="http://unixcorn.org"><img style="max-width: 70%" src="images/wide_banner.png"></a></center>
 		<div class="row">
@@ -92,7 +119,7 @@
 			</div>
 			<table class="double-table">
 				<tr>
-					<td><h5><i class="fa fa-info-circle" ></i>&nbsp;&nbsp;<a href="services.html">Plus d'infos</a> sur les offres et services.</h5></td>
+					<td><h5><i class="fa fa-info-circle" ></i>&nbsp;&nbsp;<a href="services.html">Offres & Services</a></h5></td>
 					<td><h5><i class="fa fa-cog" ></i>&nbsp;&nbsp;<a href="https://status.unixcorn.org">État des services</a></h5></td>
 				</tr>
 			</table>
