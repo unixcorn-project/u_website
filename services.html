@@ -1,68 +1,82 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
+	<head>
 
-  <!-- Basic Page Needs
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <meta charset="utf-8">
-  <title>Offres &amp; Services | Unixcorn Project</title>
-  <meta name="description" content="Unixcorn.org, site web de licornes fanatiques. Hébergement et services web à prix libre mais non gratuit. Le tout propulsé par des technologies libres et respectueuses de votre vie privée.">
-  <meta name="author" content="Unixcorn staff">
+		<!-- Basic Page Needs
+		–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+		<meta charset="utf-8">
+		<title>Offres &amp; Services | Unixcorn Project</title>
+		<meta name="description" content="Unixcorn.org, site web de licornes fanatiques. Hébergement et services web à prix libre mais non gratuit. Le tout propulsé par des technologies libres et respectueuses de votre vie privée.">
+		<meta name="author" content="Unixcorn">
 
-  <!-- Mobile Specific Metas
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- Mobile Specific Metas
+		–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- FONT
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+		<!-- SocialMeta (OpenGraph + Twitter Cards)
+		–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+		<meta name="og:site_name" property="og:site_name" content="Unixcorn" />
+		<meta name="og:title" property="og:title" content="Offres & Services" />
+		<meta name="og:description" property="og:description" content="Unixcorn.org, site web de licornes fanatiques. Hébergement et services web à prix libre mais non gratuit. Le tout propulsé par des technologies libres et respectueuses de votre vie privée." />
+		<meta name="og:type" property="og:type" content="article" />
+		<meta name="og:url" property="og:url" content="https://unixcorn.org" />
+		<meta name="og:image" property="og:image" content="https://unixcorn.org/images/wide_banner.png" />
 
-  <!-- CSS
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/skeleton.css">
-  <link rel="stylesheet" href="css/font-awesome.min.css">
-  <link rel="stylesheet" href="css/unixcorn.css">
+		<meta name="twitter:card" property="twitter:card" content="summary" />
+		<meta name="twitter:site" property="twitter:site" content="@unixcornproject" />
+		<meta name="twitter:title" property="twitter:title" content="Offres & Services | Unixcorn" />
+		<meta name="twitter:description" property="twitter:description" content="Unixcorn.org, site web de licornes fanatiques. Hébergement et services web à prix libre mais non gratuit. Le tout propulsé par des technologies libres et respectueuses de votre vie privée." />
+		<meta name="twitter:image" property="twitter:image" content="https://unixcorn.org/images/wide_banner.png" />
 
-  <!-- Favicon
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="apple-touch-icon" sizes="57x57" href="images/apple-touch-icon-57x57.png">
-  <link rel="apple-touch-icon" sizes="60x60" href="images/apple-touch-icon-60x60.png">
-  <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
-  <link rel="apple-touch-icon" sizes="76x76" href="images/apple-touch-icon-76x76.png">
-  <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
-  <link rel="apple-touch-icon" sizes="120x120" href="images/apple-touch-icon-120x120.png">
-  <link rel="apple-touch-icon" sizes="144x144" href="images/apple-touch-icon-144x144.png">
-  <link rel="apple-touch-icon" sizes="152x152" href="images/apple-touch-icon-152x152.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon-180x180.png">
-  <link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32">
-  <link rel="icon" type="image/png" href="images/android-chrome-192x192.png" sizes="192x192">
-  <link rel="icon" type="image/png" href="images/favicon-96x96.png" sizes="96x96">
-  <link rel="icon" type="image/png" href="images/favicon-16x16.png" sizes="16x16">
-  <link rel="manifest" href="images/manifest.json">
-  <link rel="shortcut icon" href="images/favicon.ico">
-  <meta name="msapplication-TileColor" content="#603cba">
-  <meta name="msapplication-TileImage" content="images/mstile-144x144.png">
-  <meta name="msapplication-config" content="images/browserconfig.xml">
-  <meta name="theme-color" content="#ffffff">
+		<!-- FONT
+		–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+		<link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
 
-  <!-- Piwik
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <script type="text/javascript">
-	var _paq = _paq || [];
-	_paq.push(["setDomains", ["*.unixcorn.org"]]);
-	_paq.push(['trackPageView']);
-	_paq.push(['enableLinkTracking']);
-	(function() {
-	var u="//stats.unixcorn.org/";
-	_paq.push(['setTrackerUrl', u+'piwik.php']);
-	_paq.push(['setSiteId', 3]);
-	var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-	g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
-	})();
-  </script>
-<noscript><p><img src="//stats.unixcorn.org/piwik.php?idsite=3" style="border:0;" alt="" /></p></noscript>
+		<!-- CSS
+		–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/skeleton.css">
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/unixcorn.css">
 
+		<!-- Favicon
+		–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+		<link rel="apple-touch-icon" sizes="57x57" href="images/apple-touch-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="60x60" href="images/apple-touch-icon-60x60.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="images/apple-touch-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="images/apple-touch-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="images/apple-touch-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="images/apple-touch-icon-152x152.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon-180x180.png">
+		<link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32">
+		<link rel="icon" type="image/png" href="images/android-chrome-192x192.png" sizes="192x192">
+		<link rel="icon" type="image/png" href="images/favicon-96x96.png" sizes="96x96">
+		<link rel="icon" type="image/png" href="images/favicon-16x16.png" sizes="16x16">
+		<link rel="manifest" href="images/manifest.json">
+		<link rel="shortcut icon" href="images/favicon.ico">
+		<meta name="msapplication-TileColor" content="#603cba">
+		<meta name="msapplication-TileImage" content="images/mstile-144x144.png">
+		<meta name="msapplication-config" content="images/browserconfig.xml">
+		<meta name="theme-color" content="#ffffff">
+
+		<!-- Piwik
+		–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+		<script type="text/javascript">
+			var _paq = _paq || [];
+			_paq.push(["setDomains", ["*.unixcorn.org"]]);
+			_paq.push(['trackPageView']);
+			_paq.push(['enableLinkTracking']);
+			(function() {
+			var u="//stats.unixcorn.org/";
+			_paq.push(['setTrackerUrl', u+'piwik.php']);
+			_paq.push(['setSiteId', 3]);
+			var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+			g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+			})();
+		</script>
+		<noscript><p><img src="//stats.unixcorn.org/piwik.php?idsite=3" style="border:0;" alt="" /></p></noscript>
 
 		<!-- Top navigation bar, taken from http://www.w3schools.com/howto/howto_js_topnav.asp
 		–––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -78,138 +92,133 @@
 			}
 		</script>
 	</head>
-<body>
+	<body>
 
-  <!-- Primary Page Layout
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+		<!-- Navigation bar
+		–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+		<header>	
+			<ul class="topnav" id="myTopnav">
+				<li><a href="index.html"><i class="fa fa-terminal"></i>&nbsp;&nbsp;Accueil</a></li>
+				<li><a href="#">Blog</a></li>
+				<li><a href="services.html">Services</a></li>
+				<li><a href="https://wiki.unixcorn.org">Wiki</a></li>
+				<li><a href="rules.html">CGU</a></li>
+				<li class="icon">
+					<a href="javascript:void(0);" onclick="toggleNav()">&#9776;</a>
+				</li>
+			</ul>
+		</header>
 
-	<header>	
-		<ul class="topnav" id="myTopnav">
-			<li><a href="index.html"><i class="fa fa-terminal"></i></a></li>
-			<li><a href="index.html">Accueil</a></li>
-			<li><a href="#">Blog</a></li>
-			<li><a href="services.html">Services</a></li>
-			<li><a href="https://wiki.unixcorn.org">Wiki</a></li>
-			<li><a href="rules.html">CGU</a></li>
-			<li class="icon">
-				<a href="javascript:void(0);" onclick="toggleNav()">&#9776;</a>
-			</li>
-		</ul>
-	</header>
+		<!-- Primary Page Layout
+		–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+		<div class="container">
+			<center><a href="http://unixcorn.org"><img style="max-width: 70%" src="images/wide_banner.png"></a></center>
 
-	<div class="container">
-		<center><a href="http://unixcorn.org"><img style="max-width: 70%" src="images/wide_banner.png"></a></center>
-		<div class="row center featured">
-			<h3 class="invisible">Donations</h3>
-			<div class="one-third column">
-				<h4><i class="fa fa-street-view"></i>&nbsp;&nbsp;Prix libre</h4>
-				<p>Tout appartient à tou⋅te⋅s, et le traitement de données personnelles ne devrait jamais être un business&nbsp;: nous avons choisi de fournir des services à prix libre. Ils sont librement utilisables (dans les limites du raisonnable), mais il est encouragé de contribuer financièrement au projet.</p>
-				<p>Le budget de fonctionnement actuel de Unixcorn est d'environ 50€ par mois, sans compter bien-sûr les longues heures passées à travailler sur l'infrastructure et les logiciels.</p>
+			<div class="row center featured">
+				<h3 class="invisible">Donations</h3>
+				<div class="one-third column">
+					<h4><i class="fa fa-street-view"></i>&nbsp;&nbsp;Prix libre</h4>
+					<p>Tout appartient à tou⋅te⋅s, et le traitement de données personnelles ne devrait jamais être un business&nbsp;: nous avons choisi de fournir des services à prix libre. Ils sont librement utilisables (dans les limites du raisonnable), mais il est encouragé de contribuer financièrement au projet.</p>
+					<p>Le budget de fonctionnement actuel de Unixcorn est d'environ 50€ par mois, sans compter bien-sûr les longues heures passées à travailler sur l'infrastructure et les logiciels.</p>
+				</div>
+				<div class="one-third column">
+					<h4><i class="fa fa-sliders"></i>&nbsp;&nbsp;Service extensible</h4>
+					<p>Afin de ne pas dégrader l'accès aux services des autres utilisateurices, certains services sont limités. Si vous avez une utilisation intensive de nos services, ou si vous représentez un groupe/collectif qui envisage de migrer ses outils chez un hébergeur neutre, solidaire et respectueux de la vie privée, n'hésitez pas à venir à notre rencontre.</p>
+					<p>Même si vous n'avez pas d'argent à nous offrir, nous arriverons certainement à trouver un arrangement.</p>
+				</div>
+				<div class="one-third column">
+					<h4><i class="fa fa-ticket"></i>&nbsp;&nbsp;Faire un don</h4>
+					<p>Pour assurer un équilibre financier, nous vous encourageons à <a href="https://liberapay.com/matunixe/donate">faire un don régulier</a> sur Liberapay, une solution de financement libre et sans but lucratif.</p>
+					<p>Pour un don ponctuel, nous pouvons recevoir les <a href="/images/coordonnees_bancaires.png">les virements bancaires</a>. Pour faire un don par chèque ou par cryptomonnaie (BTC, ETH…), merci de <a href="mailto:root@unixcorn.org">nous contacter</a>.</p>
+					<i class="fa fa-heart fa-3x"></i>&nbsp;&nbsp;<i class="fa fa-bitcoin fa-3x"></i>
+				</div>
 			</div>
-			<div class="one-third column">
-				<h4><i class="fa fa-sliders"></i>&nbsp;&nbsp;Service extensible</h4>
-				<p>Afin de ne pas dégrader l'accès aux services des autres utilisateurices, certains services sont limités. Si vous avez une utilisation intensive de nos services, ou si vous représentez un groupe/collectif qui envisage de migrer ses outils chez un hébergeur neutre, solidaire et respectueux de la vie privée, n'hésitez pas à venir à notre rencontre.</p>
-				<p>Même si vous n'avez pas d'argent à nous offrir, nous arriverons certainement à trouver un arrangement.</p>
-			</div>
-			<div class="one-third column">
-				<h4><i class="fa fa-ticket"></i>&nbsp;&nbsp;Faire un don</h4>
-				<p>Pour assurer un équilibre financier, nous vous encourageons à <a href="https://liberapay.com/matunixe/donate">faire un don régulier</a> sur Liberapay, une solution de financement libre et sans but lucratif.</p>
-				<p>Pour un don ponctuel, nous pouvons recevoir les <a href="/images/coordonnees_bancaires.png">les virements bancaires</a>. Pour faire un don par chèque ou par cryptomonnaie (BTC, ETH…), merci de <a href="mailto:root@unixcorn.org">nous contacter</a>.</p>
-				<i class="fa fa-heart fa-3x"></i>&nbsp;&nbsp;<i class="fa fa-bitcoin fa-3x"></i>
-			</div>
-		</div>
-
-<!--
-			<div class="column">
-				<h4>À quel prix ?</h4>
-				<p>L'accès à ces services se fait à prix libre. Le budget de fonctionnement actuel de l'ensemble tourne autour des 50€ par mois, sans compter bien-sûr les longues heures passées à travailler sur l'infrastructure et les logiciels.</p>
-				<p>Avec ce fonctionnement vous êtes libre de gérer comme vous désirez votre payement, une fois par mois, une fois par an, la somme que vous désirez, celle semblant la plus juste. Rien n'est obligé, vous êtes seul-e juge de votre conscience.</p>
-				
-				<center><script src="https://fr.liberapay.com/matunixe/widgets/receiving.js"></script></center>
-			</div>
--->
 	
-		<div class="row center">
-			<h3>Services sans inscription</h3>
-			<div class="one-half column">
-				<a class="button" href="https://paste.unixcorn.org"><i class="fa fa-clipboard fa-2x"></i>&nbsp;&nbsp;&nbsp;&nbsp;Partage de texte</a>
-				<br><a href="https://wiki.unixcorn.org/doku.php?id=doc_publique:services:privatebin"><i class="fa fa-info-circle fa-2x"></i></a>
-				<p>Partagez du texte de façon sécurisée avec <a href="https://privatebin.info">PrivateBin</a>. Idéal pour les configurations, code, logs, ou tout autre document qui n'est pas de nature publique.</p>
+			<div class="row center">
+				<h3>Services sans inscription</h3>
+				<div class="one-half column">
+					<a class="button" href="https://paste.unixcorn.org"><i class="fa fa-clipboard fa-2x"></i>&nbsp;&nbsp;&nbsp;&nbsp;Partage de texte</a>
+					<br><a href="https://wiki.unixcorn.org/doku.php?id=doc_publique:services:privatebin"><i class="fa fa-info-circle fa-2x"></i></a>
+					<p>Partagez du texte de façon sécurisée avec <a href="https://privatebin.info">PrivateBin</a>. Idéal pour les configurations, code, logs, ou tout autre document qui n'est pas de nature publique.</p>
+				</div>
+				<div class="one-half column">
+			  		<a class="button" href="https://pics.unixcorn.org"><i class="fa fa-picture-o fa-2x"></i>&nbsp;&nbsp;&nbsp;&nbsp;Partage d'images</a>
+					<br><a href="https://wiki.unixcorn.org/doku.php?id=doc_publique:services:lutim"><i class="fa fa-info-circle fa-2x"></i></a>
+					<p>Partagez vos images (screenshots, photos) avec <a href="https://lut.im/">Lutim</a>, en public ou en privé. Vous pourrez facilement les réutiliser ailleurs sur Internet (forum, chat).</p>
+				</div>
 			</div>
-			<div class="one-half column">
-		  		<a class="button" href="https://pics.unixcorn.org"><i class="fa fa-picture-o fa-2x"></i>&nbsp;&nbsp;&nbsp;&nbsp;Partage d'images</a>
-				<br><a href="https://wiki.unixcorn.org/doku.php?id=doc_publique:services:lutim"><i class="fa fa-info-circle fa-2x"></i></a>
-				<p>Partagez vos images (screenshots, photos) avec <a href="https://lut.im/">Lutim</a>, en public ou en privé. Vous pourrez facilement les réutiliser ailleurs sur Internet (forum, chat).</p>
-			</div>
-		</div>
 		
-		<div class="row center">
-			<h3>Inscription publique</h3>
-			<div class="one-third column">
-				<a class="button" href="https://cloud.unixcorn.org"><i class="fa fa-cloud fa-2x"></i>&nbsp;&nbsp;&nbsp;&nbsp;Cloud</a>
-				<br><a href="https://wiki.unixcorn.org/doku.php?id=doc_publique:services:cloud"><i class="fa fa-info-circle fa-2x"></i></a>
-				<p>Besoin d'accéder à vos fichiers depuis plusieurs machines ? <a href="https://nextcloud.com">Nextcloud</a> est là.</p>
-				<i class="fa fa-cog"></i>&nbsp;&nbsp;Espace alloué : 1Go (extensible)
-				<br><i class="fa fa-info-circle"></i>&nbsp;&nbsp;Profil exportable à tout moment
-				<br><br><i class="fa fa-exclamation-triangle"></i>&nbsp;&nbsp;Suppression mensuelle des comptes inutilisés.
+			<div class="row center">
+				<h3>Inscription publique</h3>
+				<div class="one-third column">
+					<a class="button" href="https://cloud.unixcorn.org"><i class="fa fa-cloud fa-2x"></i>&nbsp;&nbsp;&nbsp;&nbsp;Cloud</a>
+					<br><a href="https://wiki.unixcorn.org/doku.php?id=doc_publique:services:cloud"><i class="fa fa-info-circle fa-2x"></i></a>
+					<p>Besoin d'accéder à vos fichiers depuis plusieurs machines ? <a href="https://nextcloud.com">Nextcloud</a> est là.</p>
+					<i class="fa fa-cog"></i>&nbsp;&nbsp;Espace alloué : 1Go (extensible)
+					<br><i class="fa fa-info-circle"></i>&nbsp;&nbsp;Profil exportable à tout moment
+					<br><br><i class="fa fa-exclamation-triangle"></i>&nbsp;&nbsp;Suppression mensuelle des comptes inutilisés.
+				</div>
+	  			<div class="one-third column">
+					<a class="button" href="https://social.unixcorn.org"><i class="fa fa-users fa-2x"></i>&nbsp;&nbsp;&nbsp;&nbsp;Réseau social</a>
+					<br><i class="fa fa-info-circle fa-2x"></i>
+					<p>Pour rejoindre l'<a href="https://indieweb.org/Main_Page-fr">IndieWeb</a> et blogger de façon autonome en restant connecté⋅e aux silos, <a href="https://withknown.com">Known</a> est fait pour vous.</p>
+					<i class="fa fa-cog"></i>&nbsp;&nbsp;Espace alloué : Usage raisonnable
+					<br><i class="fa fa-info-circle"></i>&nbsp;&nbsp;Profil exportable à tout moment
+				</div>
+				<div class="one-third column">
+					<a class="button" href="https://git.unixcorn.org"><i class="fa fa-code-fork fa-2x"></i>&nbsp;&nbsp;&nbsp;&nbsp;Forge (Gitlab)</a>
+					<br><a href="https://wiki.unixcorn.org/doku.php?id=doc_publique:services:gitlab"><i class="fa fa-info-circle fa-2x"></i></a>
+					<p>Pour coopérer sur un projet versionné en toute sérénité, <a href="https://about.gitlab.com">Gitlab</a> fait des merveilles.</p>
+					<i class="fa fa-cog"></i>&nbsp;&nbsp;Espace alloué : Usage raisonnable
+					<br><i class="fa fa-info-circle"></i>&nbsp;&nbsp;Profil exportable à tout moment
+				</div>
 			</div>
-  			<div class="one-third column">
-				<a class="button" href="https://social.unixcorn.org"><i class="fa fa-users fa-2x"></i>&nbsp;&nbsp;&nbsp;&nbsp;Réseau social</a>
-				<br><i class="fa fa-info-circle fa-2x"></i>
-				<p>Pour rejoindre l'<a href="https://indieweb.org/Main_Page-fr">IndieWeb</a> et blogger de façon autonome en restant connecté⋅e aux silos, <a href="https://withknown.com">Known</a> est fait pour vous.</p>
-				<i class="fa fa-cog"></i>&nbsp;&nbsp;Espace alloué : Usage raisonnable
-				<br><i class="fa fa-info-circle"></i>&nbsp;&nbsp;Profil exportable à tout moment
+
+			<div class="row center">
+				<h3>Outils internes</h3>
+				<div class="one-third column">
+					<a class="button" href="https://forum.unixcorn.org"><i class="fa fa-comments-o fa-2x"></i>&nbsp;&nbsp;Forum</a>
+					<br><i class="fa fa-info-circle fa-2x"></i>
+					<p>Un forum de discussion pour régler les éventuels soucis, travailler sur les projets futurs et tout simplement faire vivre notre communauté.</p>
+				</div>
+				<div class="one-third column">
+					<a class="button" href="https://mail.unixcorn.org"><i class="fa fa-envelope fa-2x"></i>&nbsp;&nbsp;Mail</a>
+					<br><i class="fa fa-info-circle fa-2x"></i>
+					<p></p>
+				</div>
+				<div class="one-third column">
+					<a class="button" href="irc.html"><i class="fa fa-comments-o fa-2x"></i>&nbsp;&nbsp;Webchat IRC</a>
+					<br><i class="fa fa-info-circle fa-2x"></i>
+					<p>Un client web pour se connecter à notre salon de chat ou n'importe quel réseau IRC.</p>
+				</div>
 			</div>
-			<div class="one-third column">
-				<a class="button" href="https://git.unixcorn.org"><i class="fa fa-code-fork fa-2x"></i>&nbsp;&nbsp;&nbsp;&nbsp;Forge (Gitlab)</a>
-				<br><a href="https://wiki.unixcorn.org/doku.php?id=doc_publique:services:gitlab"><i class="fa fa-info-circle fa-2x"></i></a>
-				<p>Pour coopérer sur un projet versionné en toute sérénité, <a href="https://about.gitlab.com">Gitlab</a> fait des merveilles.</p>
-				<i class="fa fa-cog"></i>&nbsp;&nbsp;Espace alloué : Usage raisonnable
-				<br><i class="fa fa-info-circle"></i>&nbsp;&nbsp;Profil exportable à tout moment
+
+			<div class="row center">
+				<h3>Infrastructure</h3>
+				<div class="one-third column">
+					<a href="https://proxmox.com/en/"><img style="max-width: 60%" src="images/external/proxmox-logo.png"></a>
+					<p>« Proxmox Virtual Environment » est une solution complète de virtualisation, basée sur KVM et les conteneurs LXC. Notre entière infrastructure repose sur ces technologies open-source, Proxmox contribue doublement au projet Unixcorn en nous fournissant gracieusement des licences d'utilisation « Enterprise ».</p>
+				</div>
+				<div class="one-third column">
+					<a href="https://www.debian.org/index.fr.html"><img style="max-height: 10%" src="images/external/openlogo-nd-50.png"></a>
+					<p>« Debian » GNU/Linux est un système d'exploitation libre dit universel. Il est utilisé à tous les niveaux dans notre infrastructure, sur nos serveurs (c'est la base de Proxmox) mais aussi dans chacune de nos machines virtuelles.</p>
+				</div>
+				<div class="one-third column">
+					<a href="https://letsencrypt.org"><img style="max-width: 60%" src="images/external/letsencrypt-logo-horizontal.svg"></a>
+					<p>« Let's Encrypt  » est une autorité de certification fournissant des certificats X.509 gratuits pour le protocole TLS. L'ensemble de nos services et sites internet reposent sur des certificats fournis par le projet Let's Encrypt, qui a au passage réellement démocratisé la mise en place du protocole TLS au sein des infrastructures.</p>
+				</div>
 			</div>
+
+			<!-- Footer
+			–––––––––––––––––––––––––––––––––––––––––––––––––– -->	
+			<div class="row center">
+				<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="images/external/cc-by-nc-sa.png" /></a><br />© 2015-2016 <a href="https://unixcorn.org">Unixcorn Project</a>
+				<br><a class="button button-primary" href="http://unixcorn.org/rules.html">Conditions Générales d'Utilisations</a>
+			</div>
+
 		</div>
 
-		<div class="row center">
-			<h3>Outils internes</h3>
-			<div class="one-third column">
-				<a class="button" href="https://forum.unixcorn.org"><i class="fa fa-comments-o fa-2x"></i>&nbsp;&nbsp;Forum</a>
-				<br><i class="fa fa-info-circle fa-2x"></i>
-				<p>Un forum de discussion pour régler les éventuels soucis, travailler sur les projets futurs et tout simplement faire vivre notre communauté.</p>
-			</div>
-			<div class="one-third column">
-				<a class="button" href="https://mail.unixcorn.org"><i class="fa fa-envelope fa-2x"></i>&nbsp;&nbsp;Mail</a>
-				<br><i class="fa fa-info-circle fa-2x"></i>
-				<p></p>
-			</div>
-			<div class="one-third column">
-				<a class="button" href="irc.html"><i class="fa fa-comments-o fa-2x"></i>&nbsp;&nbsp;Webchat IRC</a>
-				<br><i class="fa fa-info-circle fa-2x"></i>
-				<p>Un client web pour se connecter à notre salon de chat ou n'importe quel réseau IRC.</p>
-			</div>
-		</div>
-
-		<div class="row center">
-			<h3>Infrastructure</h3>
-			<div class="one-third column">
-				<a href="https://proxmox.com/en/"><img style="max-width: 60%" src="images/external/proxmox-logo.png"></a>
-				<p>« Proxmox Virtual Environment » est une solution complète de virtualisation, basée sur KVM et les conteneurs LXC. Notre entière infrastructure repose sur ces technologies open-source, Proxmox contribue doublement au projet Unixcorn en nous fournissant gracieusement des licences d'utilisation « Enterprise ».</p>
-			</div>
-			<div class="one-third column">
-				<a href="https://www.debian.org/index.fr.html"><img style="max-height: 10%" src="images/external/openlogo-nd-50.png"></a>
-				<p>« Debian » GNU/Linux est un système d'exploitation libre dit universel. Il est utilisé à tous les niveaux dans notre infrastructure, sur nos serveurs (c'est la base de Proxmox) mais aussi dans chacune de nos machines virtuelles.</p>
-			</div>
-			<div class="one-third column">
-				<a href="https://letsencrypt.org"><img style="max-width: 60%" src="images/external/letsencrypt-logo-horizontal.svg"></a>
-				<p>« Let's Encrypt  » est une autorité de certification fournissant des certificats X.509 gratuits pour le protocole TLS. L'ensemble de nos services et sites internet reposent sur des certificats fournis par le projet Let's Encrypt, qui a au passage réellement démocratisé la mise en place du protocole TLS au sein des infrastructures.</p>
-			</div>
-		</div> 
-
-		<div class="row center">
-			<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="images/external/cc-by-nc-sa.png" /></a><br />© 2015-2016 <a href="https://unixcorn.org">Unixcorn Project</a>
-			<br><a class="button button-primary" href="http://unixcorn.org/rules.html">Conditions Générales d'Utilisations</a>
-		</div>
-	</div>
-<!-- End Document
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	<!-- End Document
+	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
 	</body>
 </html>
