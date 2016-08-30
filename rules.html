@@ -1,67 +1,81 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
+	<head>
 
-  <!-- Basic Page Needs
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <meta charset="utf-8">
-  <title>Règles d'utilisation | Unixcorn Project</title>
-  <meta name="description" content="Unixcorn.org, site web de licornes fanatiques. Hébergement et services web à prix libre mais non gratuit. Le tout propulsé par des technologies libres et respectueuses de votre vie privée.">
-  <meta name="author" content="Unixcorn staff">
+		<!-- Basic Page Needs
+		–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+		<meta charset="utf-8">
+		<title>Règles d'utilisation | Unixcorn Project</title>
+		<meta name="description" content="Unixcorn.org, site web de licornes fanatiques. Hébergement et services web à prix libre mais non gratuit. Le tout propulsé par des technologies libres et respectueuses de votre vie privée.">
+		<meta name="author" content="Unixcorn">
 
-  <!-- Mobile Specific Metas
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- Mobile Specific Metas
+		–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- FONT
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+		<!-- SocialMeta (OpenGraph + Twitter Cards)
+		–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+		<meta name="og:site_name" property="og:site_name" content="Unixcorn" />
+		<meta name="og:title" property="og:title" content="Règles d'utilisation" />
+		<meta name="og:description" property="og:description" content="Unixcorn.org, site web de licornes fanatiques. Hébergement et services web à prix libre mais non gratuit. Le tout propulsé par des technologies libres et respectueuses de votre vie privée." />
+		<meta name="og:type" property="og:type" content="article" />
+		<meta name="og:url" property="og:url" content="https://unixcorn.org" />
+		<meta name="og:image" property="og:image" content="https://unixcorn.org/images/wide_banner.png" />
 
-  <!-- CSS
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/skeleton.css">
-  <link rel="stylesheet" href="css/unixcorn.css">
+		<meta name="twitter:card" property="twitter:card" content="summary" />
+		<meta name="twitter:site" property="twitter:site" content="@unixcornproject" />
+		<meta name="twitter:title" property="twitter:title" content="Règles d'utilisation | Unixcorn" />
+		<meta name="twitter:description" property="twitter:description" content="Unixcorn.org, site web de licornes fanatiques. Hébergement et services web à prix libre mais non gratuit. Le tout propulsé par des technologies libres et respectueuses de votre vie privée." />
+		<meta name="twitter:image" property="twitter:image" content="https://unixcorn.org/images/wide_banner.png" />
 
-  <!-- Favicon
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="apple-touch-icon" sizes="57x57" href="images/apple-touch-icon-57x57.png">
-  <link rel="apple-touch-icon" sizes="60x60" href="images/apple-touch-icon-60x60.png">
-  <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
-  <link rel="apple-touch-icon" sizes="76x76" href="images/apple-touch-icon-76x76.png">
-  <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
-  <link rel="apple-touch-icon" sizes="120x120" href="images/apple-touch-icon-120x120.png">
-  <link rel="apple-touch-icon" sizes="144x144" href="images/apple-touch-icon-144x144.png">
-  <link rel="apple-touch-icon" sizes="152x152" href="images/apple-touch-icon-152x152.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon-180x180.png">
-  <link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32">
-  <link rel="icon" type="image/png" href="images/android-chrome-192x192.png" sizes="192x192">
-  <link rel="icon" type="image/png" href="images/favicon-96x96.png" sizes="96x96">
-  <link rel="icon" type="image/png" href="images/favicon-16x16.png" sizes="16x16">
-  <link rel="manifest" href="images/manifest.json">
-  <link rel="shortcut icon" href="images/favicon.ico">
-  <meta name="msapplication-TileColor" content="#603cba">
-  <meta name="msapplication-TileImage" content="images/mstile-144x144.png">
-  <meta name="msapplication-config" content="images/browserconfig.xml">
-  <meta name="theme-color" content="#ffffff">
+		<!-- FONT
+		–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+		<link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
 
-  <!-- Piwik
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <script type="text/javascript">
-	var _paq = _paq || [];
-	_paq.push(["setDomains", ["*.unixcorn.org"]]);
-	_paq.push(['trackPageView']);
-	_paq.push(['enableLinkTracking']);
-	(function() {
-	var u="//stats.unixcorn.org/";
-	_paq.push(['setTrackerUrl', u+'piwik.php']);
-	_paq.push(['setSiteId', 3]);
-	var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-	g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
-	})();
-  </script>
-<noscript><p><img src="//stats.unixcorn.org/piwik.php?idsite=3" style="border:0;" alt="" /></p></noscript>
+		<!-- CSS
+		–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/skeleton.css">
+		<link rel="stylesheet" href="css/unixcorn.css">
 
+		<!-- Favicon
+		–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+		<link rel="apple-touch-icon" sizes="57x57" href="images/apple-touch-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="60x60" href="images/apple-touch-icon-60x60.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="images/apple-touch-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="images/apple-touch-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="images/apple-touch-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="images/apple-touch-icon-152x152.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon-180x180.png">
+		<link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32">
+		<link rel="icon" type="image/png" href="images/android-chrome-192x192.png" sizes="192x192">
+		<link rel="icon" type="image/png" href="images/favicon-96x96.png" sizes="96x96">
+		<link rel="icon" type="image/png" href="images/favicon-16x16.png" sizes="16x16">
+		<link rel="manifest" href="images/manifest.json">
+		<link rel="shortcut icon" href="images/favicon.ico">
+		<meta name="msapplication-TileColor" content="#603cba">
+		<meta name="msapplication-TileImage" content="images/mstile-144x144.png">
+		<meta name="msapplication-config" content="images/browserconfig.xml">
+		<meta name="theme-color" content="#ffffff">
+
+		<!-- Piwik
+		–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+		<script type="text/javascript">
+			var _paq = _paq || [];
+			_paq.push(["setDomains", ["*.unixcorn.org"]]);
+			_paq.push(['trackPageView']);
+			_paq.push(['enableLinkTracking']);
+			(function() {
+			var u="//stats.unixcorn.org/";
+			_paq.push(['setTrackerUrl', u+'piwik.php']);
+			_paq.push(['setSiteId', 3]);
+			var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+			g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+			})();
+		</script>
+		<noscript><p><img src="//stats.unixcorn.org/piwik.php?idsite=3" style="border:0;" alt="" /></p></noscript>
 
 		<!-- Top navigation bar, taken from http://www.w3schools.com/howto/howto_js_topnav.asp
 		–––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -77,60 +91,77 @@
 			}
 		</script>
 	</head>
-<body>
+	<body>
 
-  <!-- Primary Page Layout
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-
-	<header>	
-		<ul class="topnav" id="myTopnav">
-			<li><a href="index.html"><i class="fa fa-terminal"></i></a></li>
-			<li><a href="index.html">Accueil</a></li>
-			<li><a href="#">Blog</a></li>
-			<li><a href="services.html">Services</a></li>
-			<li><a href="https://wiki.unixcorn.org">Wiki</a></li>
-			<li><a href="rules.html">CGU</a></li>
-			<li class="icon">
-				<a href="javascript:void(0);" onclick="toggleNav()">&#9776;</a>
-			</li>
-		</ul>
-	</header>
-
-	<div class="container" style="margin-top: 1%">
-  		<center><a href="http://unixcorn.org"><img style="max-width: 70%" src="images/wide_banner.png"></a></center>
-   		<h2>CGU - Conditions d'utilisation des services</h2> 
-		<div class="row">
-			<h4>1. Instance « cloud », service d'hébergement de données</h4>
-				<p>Le service d'hébergement de données, dit « cloud », est une instance ownCloud standard où seul l'affichage (le thème) est personnalisé. Le service inclu la mise à disposition d'outils bureautiques en ligne tels que l'éditeur collaboratif de documents, le gestionnaire de calendriers, le gestionnaire de répertoires, l'agrégateur de flux RSS et l'organisateur de galerie d'images. Ceci en plus de l'hébergement, le partage, l'organisation de fichiers. L'application intégrée « Annonces » est utilisé par l'équipe d'administration pour faire passer des messages aux utilisateur-ice-s en prévision d'une action de maintenance (telle qu'une mise à jour par exemple).</p>
-			<h5>Par votre inscription au service vous acceptez tacitement les règles d'utilisation suivantes :</h5>
-			<ul>
-							<li>Vous vous engagez à ne pas téléverser de contenu délicteux et à ne pas utiliser le service à des fins frauduleuses.</li>
-				<li>Si vous n'effectuez pas de don récurrent votre compte est supprimé au bout d'un mois complet d'inactivité (non connection au site internet, synchronisation depuis n'importe quel logiciel client), il sera alors impossible de récupérer vos données.</li>
-				<li>Vous êtes responsables de vos données, actuellement elles ne sont pas stockées sur un volume chiffré. Cela veut notamment dire que nos équipes d'administration peuvent y avoir accès.</li>
-				<li>Vous autorisez l'équipe d'administration à vous contacter par e-mail (à l'adresse utilisée pour l'inscription), en cas de problème technique mais aussi simplement pour faire passer des informations en rapport direct avec le service utilisé.</li>
+		<!-- Navigation bar
+		–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+		<header>	
+			<ul class="topnav" id="myTopnav">
+				<li><a href="index.html"><i class="fa fa-terminal"></i>&nbsp;&nbsp;Accueil</a></li>
+				<li><a href="#">Blog</a></li>
+				<li><a href="services.html">Services</a></li>
+				<li><a href="https://wiki.unixcorn.org">Wiki</a></li>
+				<li><a href="rules.html">CGU</a></li>
+				<li class="icon">
+					<a href="javascript:void(0);" onclick="toggleNav()">&#9776;</a>
+				</li>
 			</ul>
-		<h4>2. Forge logicielle libre, Gitlab</h4>
-			<p>Le service de forge logicielle est une instance Gitlab CE (Community Edition) standard. Le service inclu l'ensemble des fonctionnalités proposées par le logiciel et ceci de manière totalement illimité.</p>
-		<h4>3. Forum de discussion, Flarum</h4>
-			<p>Le forum de discussion mis à disposition est une instance de Flarum agrémentée de quelques extensions et d'une traduction française du logiciel. Elle a vocation à permettre la communication entre les membres utilisateur-ice-s et administrateur-ice-s du projet. Bien évidemment les règles habituelles de bienséances sont à respecter, aucune parole ou comportement sexiste, raciste, xénophobe, homophobe ou encore transphobe ne sera toléré. De même nous refusons catégoriquement tout agisme ou classisme, comme tous les autres espaces du projet nous voulons y être porteur-euse-s de respect de l'autre et de solidarité.<br /> En cas de problème la personne contrevenant à ces règles pourra se voir retirer ses accès à l'ensemble des services du projet, et ce sans préavis quelconque.</p>
-		<h4>4. Salon de discussion IRC</h4>
-			<p>Le salon de discussion IRC est mis à disposition par Freenode, il est hébergé sur leurs serveurs et joignable de différentes manières. Les règles d'utilisation de ce service sont globalement identiques à celles du forum, cependant du fait du caractère « immédiat » de la discussion instantannée possible il convient de préciser les choses suivantes :</p>
-			<ul>
-							<li>Vous avez un problème d'ordre technique ? Le forum est plus approprié pour la résolution des problèmes.</li>
-							<li>Vous avez une question ? Posez là sans attendre et soyez patient pour la réponse, si vous êtes pressé il est préférable de nous contacter par e-mail ou d'utiliser le forum.</li>
-							<li>Ne perdez pas de vue que l'ensemble des contributeur-ice-s sont bénévoles, ils ne sont pas disponible H/24.</li>
-					</ul>
-			<br />
-			<p>Page modifiée la dernière fois le 1er juillet 2016.</p>
-		</div>
-		<div class="row center">
-				<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="images/external/cc-by-nc-sa.png" /></a><br />© 2015-2016 <a href="https://unixcorn.org">Unixcorn Project</a>
-				<br><a class="button button-primary" href="http://unixcorn.org/rules.html">Conditions Générales d'Utilisations</a>
+		</header>
+
+		<!-- Microformats2 h-card
+		–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+		<div class="invisible h-card">
+			<a class="u-url" href="https://unixcorn.org">
+				<img class="u-photo" src="https://unixcorn.org/images/favicon-96x96.png">
+				<span class="p-name">Unixcorn</span>
+			</a>
+			<p class="p-note">Unixcorn.org, site web de licornes fanatiques. Hébergement et services web à prix libre mais non gratuit. Le tout propulsé par des technologies libres et respectueuses de votre vie privée.</p>
+			<div>
+				<a href="https://twitter.com/unixcornproject" title="Twitter" rel="me" class="u-url"><i class="fa fa-2x fa-twitter"></i></a>
+				<a href="https://git.unixcorn.org/groups/UnixcornProject" title="GitHub" rel="me" class="u-url"><i class="fa fa-2x fa-github"></i></a>
+				<a href="mailto:root@unixcorn.org" title="e-mail" rel="me" class="u-email"><i class="fa fa-2x fa-at"></i></a>
+			</div>
 		</div>
 
-	</div>
+		<!-- Primary Page Layout
+		–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+		<div class="container">
+	  		<center><a href="http://unixcorn.org"><img style="max-width: 70%" src="images/wide_banner.png"></a></center>
+	   		<h2>CGU - Conditions d'utilisation des services</h2> 
+			<div class="row">
+				<h4>1. Instance « cloud », service d'hébergement de données</h4>
+					<p>Le service d'hébergement de données, dit « cloud », est une instance ownCloud standard où seul l'affichage (le thème) est personnalisé. Le service inclu la mise à disposition d'outils bureautiques en ligne tels que l'éditeur collaboratif de documents, le gestionnaire de calendriers, le gestionnaire de répertoires, l'agrégateur de flux RSS et l'organisateur de galerie d'images. Ceci en plus de l'hébergement, le partage, l'organisation de fichiers. L'application intégrée « Annonces » est utilisé par l'équipe d'administration pour faire passer des messages aux utilisateur-ice-s en prévision d'une action de maintenance (telle qu'une mise à jour par exemple).</p>
+				<h5>Par votre inscription au service vous acceptez tacitement les règles d'utilisation suivantes :</h5>
+				<ul>
+								<li>Vous vous engagez à ne pas téléverser de contenu délicteux et à ne pas utiliser le service à des fins frauduleuses.</li>
+					<li>Si vous n'effectuez pas de don récurrent votre compte est supprimé au bout d'un mois complet d'inactivité (non connection au site internet, synchronisation depuis n'importe quel logiciel client), il sera alors impossible de récupérer vos données.</li>
+					<li>Vous êtes responsables de vos données, actuellement elles ne sont pas stockées sur un volume chiffré. Cela veut notamment dire que nos équipes d'administration peuvent y avoir accès.</li>
+					<li>Vous autorisez l'équipe d'administration à vous contacter par e-mail (à l'adresse utilisée pour l'inscription), en cas de problème technique mais aussi simplement pour faire passer des informations en rapport direct avec le service utilisé.</li>
+				</ul>
+			<h4>2. Forge logicielle libre, Gitlab</h4>
+				<p>Le service de forge logicielle est une instance Gitlab CE (Community Edition) standard. Le service inclu l'ensemble des fonctionnalités proposées par le logiciel et ceci de manière totalement illimité.</p>
+			<h4>3. Forum de discussion, Flarum</h4>
+				<p>Le forum de discussion mis à disposition est une instance de Flarum agrémentée de quelques extensions et d'une traduction française du logiciel. Elle a vocation à permettre la communication entre les membres utilisateur-ice-s et administrateur-ice-s du projet. Bien évidemment les règles habituelles de bienséances sont à respecter, aucune parole ou comportement sexiste, raciste, xénophobe, homophobe ou encore transphobe ne sera toléré. De même nous refusons catégoriquement tout agisme ou classisme, comme tous les autres espaces du projet nous voulons y être porteur-euse-s de respect de l'autre et de solidarité.<br /> En cas de problème la personne contrevenant à ces règles pourra se voir retirer ses accès à l'ensemble des services du projet, et ce sans préavis quelconque.</p>
+			<h4>4. Salon de discussion IRC</h4>
+				<p>Le salon de discussion IRC est mis à disposition par Freenode, il est hébergé sur leurs serveurs et joignable de différentes manières. Les règles d'utilisation de ce service sont globalement identiques à celles du forum, cependant du fait du caractère « immédiat » de la discussion instantannée possible il convient de préciser les choses suivantes :</p>
+				<ul>
+								<li>Vous avez un problème d'ordre technique ? Le forum est plus approprié pour la résolution des problèmes.</li>
+								<li>Vous avez une question ? Posez là sans attendre et soyez patient pour la réponse, si vous êtes pressé il est préférable de nous contacter par e-mail ou d'utiliser le forum.</li>
+								<li>Ne perdez pas de vue que l'ensemble des contributeur-ice-s sont bénévoles, ils ne sont pas disponible H/24.</li>
+						</ul>
+				<br />
+				<p>Page modifiée la dernière fois le 1er juillet 2016.</p>
+			</div>
 
-<!-- End Document
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-</body>
+			<!-- Footer
+			–––––––––––––––––––––––––––––––––––––––––––––––––– -->		
+			<div class="row center">
+					<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="images/external/cc-by-nc-sa.png" /></a><br />© 2015-2016 <a href="https://unixcorn.org">Unixcorn Project</a>
+					<br><a class="button button-primary" href="http://unixcorn.org/rules.html">Conditions Générales d'Utilisations</a>
+			</div>
+		</div>
+
+	<!-- End Document
+	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	</body>
 </html>
