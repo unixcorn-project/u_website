@@ -84,10 +84,6 @@ ul.topnav {
 	vertical-align: middle;
 }
 
-ul.topnav li:first-child {
-	padding-right: 0;
-}
-
 ul.topnav li:first-child i {
 	color: #3ec4ee;
 	font-weight: bolder;
