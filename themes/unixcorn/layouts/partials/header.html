@@ -1,9 +1,9 @@
-<!DOCTYPE html>
+{{ if eq .Title .Site.Title }}{{ .Scratch.Add "title" "Accueil" }}{{ else }}{{ .Scratch.Add "title" .Title }}{{ end }}{{ $description := .Params.description | default "Unixcorn.org, site web de licornes fanatiques. Hébergement et services web à prix libre mais non gratuit. Le tout propulsé par des technologies libres et respectueuses de votre vie privée." }}{{ $image := .Params.image | default "https://unixcorn.org/images/profile.png" }}<!DOCTYPE html>
 <html>
 	<head>
 		<meta charset="utf8">
-        <title>{{ .Title }} | {{ .Site.Title }}</title>
-        <meta name="description" content="Unixcorn.org, site web de licornes fanatiques. Hébergement et services web à prix libre mais non gratuit. Le tout propulsé par des technologies libres et respectueuses de votre vie privée.">
+        <title>{{ .Scratch.Get "title" }} | {{ .Site.Title }}</title>
+        <meta name="description" content="{{ $description }}">
 		<meta name="author" content="Unixcorn">
 
 		<!-- Mobile Specific Metas
@@ -13,17 +13,17 @@
 		<!-- SocialMeta (OpenGraph + Twitter Cards)
 		–––––––––––––––––––––––––––––––––––––––––––––––––– -->
 		<meta name="og:site_name" property="og:site_name" content="Unixcorn" />
-		<meta name="og:title" property="og:title" content="{{ .Title }} | {{ .Site.Title }}" />
-		<meta name="og:description" property="og:description" content="{{ .Params.description | default "Unixcorn.org, site web de licornes fanatiques. Hébergement et services web à prix libre mais non gratuit. Le tout propulsé par des technologies libres et respectueuses de votre vie privée." }}" />
+		<meta name="og:title" property="og:title" content="{{ .Scratch.Get "title" }} | {{ .Site.Title }}" />
+		<meta name="og:description" property="og:description" content="{{ $description }}" />
 		<meta name="og:type" property="og:type" content="article" />
 		<meta name="og:url" property="og:url" content="https://unixcorn.org" />
-		<meta name="og:image" property="og:image" content="{{ .Params.image | default "https://unixcorn.org/images/profile.png" }}" />
+		<meta name="og:image" property="og:image" content="{{ $image }}" />
 
 		<meta name="twitter:card" property="twitter:card" content="summary" />
 		<meta name="twitter:site" property="twitter:site" content="@unixcornproject" />
-		<meta name="twitter:title" property="twitter:title" content="{{ .Title }} | {{ .Site.Title }}" />
-		<meta name="twitter:description" property="twitter:description" content="{{ .Params.description | default "Unixcorn.org, site web de licornes fanatiques. Hébergement et services web à prix libre mais non gratuit. Le tout propulsé par des technologies libres et respectueuses de votre vie privée." }}" />
-		<meta name="twitter:image" property="twitter:image" content="{{ .Params.image | default "https://unixcorn.org/images/profile.png" }}" />
+		<meta name="twitter:title" property="twitter:title" content="{{ .Scratch.Get "title" }} | {{ .Site.Title }}" />
+		<meta name="twitter:description" property="twitter:description" content="{{ $description }}" />
+		<meta name="twitter:image" property="twitter:image" content="{{ $image }}" />
 
 		<!-- FONT
 		–––––––––––––––––––––––––––––––––––––––––––––––––– -->
