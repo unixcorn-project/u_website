@@ -6,6 +6,9 @@
 	text-align: center;
 }
 
+/*
+	Center doesn't affect paragraphs, specified.
+*/
 .center p {
 	text-align: justify;
 }
@@ -45,6 +48,17 @@ h1, h2, h3, h4 {
 }
 
 /*
+  The last paragraph of a row has its margin determined by row, not by p
+*/
+p:last-child {
+	margin-bottom: 0;
+}
+
+.service p {
+	text-align: center;
+}
+
+/*
 	Featured section
 */
 
@@ -76,7 +90,7 @@ h1, h2, h3, h4 {
 	border-color: #EEE;
 }
 
-.featured h5 {
+.featured h5, .featured h6 {
 	margin-bottom: 0;
 }
 
