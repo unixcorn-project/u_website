@@ -82,6 +82,11 @@ h5 {
 	color: #EEE;
 }
 
+.featured .button {
+	color: #EEE;
+	border-color: #EEE;
+}
+
 /*
 	Simple flexbox Grid
 */
