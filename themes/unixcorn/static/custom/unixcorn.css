@@ -6,6 +6,10 @@
 	text-align: center;
 }
 
+.center p {
+	text-align: justify;
+}
+
 .fa {
 	vertical-align: middle;
 }
@@ -20,6 +24,10 @@
 
 .container {
 	margin-top: 0;
+}
+
+h1, h2, h3, h4 {
+	font-weight: bold;
 }
 
 .row {
@@ -45,6 +53,10 @@
 	border: 5px;
 	border-radius: 10px;
 	color: #EEE;
+}
+
+.featured .column {
+	padding: 0 1% 0 1%;
 }
 
 .featured .double-table {
