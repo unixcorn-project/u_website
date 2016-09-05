@@ -6,6 +6,13 @@
 	text-align: center;
 }
 
+/*
+	Center doesn't affect paragraphs, specified.
+*/
+.center p {
+	text-align: justify;
+}
+
 .fa {
 	vertical-align: middle;
 }
@@ -20,6 +27,10 @@
 
 .container {
 	margin-top: 0;
+}
+
+h1, h2, h3, h4 {
+	font-weight: bold;
 }
 
 .row {
@@ -37,6 +48,17 @@
 }
 
 /*
+  The last paragraph of a row has its margin determined by row, not by p
+*/
+p:last-child {
+	margin-bottom: 0;
+}
+
+.service p {
+	text-align: center;
+}
+
+/*
 	Featured section
 */
 
@@ -45,6 +67,10 @@
 	border: 5px;
 	border-radius: 10px;
 	color: #EEE;
+}
+
+.featured .column {
+	padding: 0 1% 0 1%;
 }
 
 .featured .double-table {
@@ -64,7 +90,7 @@
 	border-color: #EEE;
 }
 
-.featured h5 {
+.featured h5, .featured h6 {
 	margin-bottom: 0;
 }
 
