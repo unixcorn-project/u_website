@@ -1,67 +1,80 @@
-/*
-	Generic styles
-*/
-
-.center {
-	text-align: center;
-}
-
-/*
-	Center doesn't affect paragraphs, specified.
-*/
-.center p {
-	text-align: justify;
-}
-
-.fa {
-	vertical-align: middle;
+body {
+	font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .invisible {
 	display: none;
 }
 
-/*
-	Unixcorn styles
-*/
-
-.container {
-	margin-top: 0;
+h1, h2, h3, h4, section {
+	margin: 1rem auto 1rem auto;
 }
 
-h1, h2, h3, h4 {
-	font-weight: bold;
+section {
+	padding: 1% 0 1% 0;
 }
 
-.row {
-	padding-top: 2%;
-	padding-bottom: 2%;
+section article {
+	text-align: center;
 }
 
-.column {
-	margin-left: 1%;
-	margin-right: 1%;
+section article .button {
+	margin-bottom: 0.5rem;
 }
 
-.column:first-child {
-	margin-left: 1%;
+section article p {
+	text-align: justify;
 }
 
-/*
-  The last paragraph of a row has its margin determined by row, not by p
-*/
-p:last-child {
-	margin-bottom: 0;
+.service aside {
+	margin-top: 0.2rem;
 }
 
 .service p {
 	text-align: center;
 }
 
-/*
-	Featured section
-*/
+footer {
+	text-align: center;
+	margin-top: 2%;
+	margin-bottom: 2%;
+}
 
+.fa {
+	vertical-align: middle;
+}
+
+/* Titles */
+h1, h2, h3, h4 {
+	font-weight: bold;
+	text-align: center;
+}
+
+article h1, article h2, article h3, article h4, article h5 {
+	margin: 0;
+}
+
+h1 {
+	font-size: 3.5rem;
+}
+
+h2 {
+	font-size: 3.0rem;
+}
+
+h3 {
+	font-size: 2.5rem;
+}
+
+h4 {
+	font-size: 2.0rem;
+}
+
+h5 {
+	font-size: 1.1rem;
+}
+
+/* Featured section */
 .featured {
 	background: #474747;
 	border: 5px;
@@ -69,30 +82,51 @@ p:last-child {
 	color: #EEE;
 }
 
-.featured .column {
-	padding: 0 1% 0 1%;
-}
-
-.featured .double-table {
-	margin: 0;
-	width: 100%;
-}
-
-.featured .double-table td {
-	border: 0;
-	width: 50%;
-	text-align: center;
-	padding-bottom: 0;
-}
-
 .featured .button {
 	color: #EEE;
 	border-color: #EEE;
 }
 
-.featured h5, .featured h6 {
-	margin-bottom: 0;
+/*
+	Simple flexbox Grid
+*/
+section {
+	display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: stretch;
+    flex-wrap: wrap;
+    width: 80%;
 }
+
+/*
+	Columns play around with width, not flex-basis
+	The latter is used to switch to small displays
+*/
+.half {
+	width: 46%;
+}
+
+.third {
+	width: 31%;
+}
+
+/*
+	Flexbox collapse and vertical margin
+	on smaller screens
+*/
+
+@media screen and (max-width:680px) {
+	section article {
+		flex-basis: 100%;
+		margin: 1rem 5% 1rem 5%;
+	}
+	
+	section {
+		width: 90%;
+	}
+}
+
 
 /*
 	Top navigation menu
@@ -107,7 +141,6 @@ ul.topnav {
     padding: 0;
     overflow: hidden;
     background-color: #474747;
-	vertical-align: middle;
 }
 
 ul.topnav li:first-child i {
@@ -118,7 +151,7 @@ ul.topnav li:first-child i {
 /* Float the list items side by side */
 ul.topnav li {
 	float: left;
-	margin: 0;
+	margin: 0 0 0.1rem 0;
 	padding: 0 1em 0;
 }
 
@@ -129,7 +162,7 @@ ul.topnav li a {
     text-align: center;
     text-decoration: none;
     transition: 0.3s;
-    font-size: 2rem;
+    font-size: 1.5rem;
 	font-variant: small-caps;
 	font-weight: bold;
 }
@@ -168,10 +201,59 @@ ul.topnav li.icon {display: none;}
   }
 }
 
+/* Borrowed from Skeleton */
+a {
+  color: #1EAEDB;
+  text-decoration: none;}
+a:hover {
+  color: #0FA0CE;
+  text-decoration: none;}
+  
+.button {
+    border: 1px solid #bbb;
+    border-radius: 4px;
+    color: #555;
+    padding: 0.4rem 1rem 0.4rem 1rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 0.7rem;
+    letter-spacing: 0.1rem;
+}
+
+.button:hover, .button:focus {
+	color: #333;
+	border-color: #888;
+	/*outline: 0;*/
+}
+
+.button-primary {
+	color: #FFF;
+	background-color: #33C3F0;
+	border-color: #33C3F0;
+}
+
+.button-primary:hover, .button-primary:focus {
+	background-color: #1EAEDB;
+	border-color: #1EAEDB;
+}
+
+th,td {
+  padding: 0.5rem;
+  text-align: left;
+  border-bottom: 1px solid #E1E1E1; }
+th:first-child,
+td:first-child {
+  padding-left: 0; }
+th:last-child,
+td:last-child {
+  padding-right: 0; }
+
 /*
 	Donation progress bar taken from http://workshop.rs/2012/12/animated-progress-bar-in-4-lines-of-jquery/
 */
-
 #progressBar {
     height: 1rem;
     background-color: #292929;

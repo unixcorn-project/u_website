@@ -1,90 +1,101 @@
 {{ partial "header.html" . }}
-<div class="container">
-	<div class="row center featured">
-		<h3><i class="fa fa-street-view"></i>&nbsp;&nbsp;Services à prix libre</h3>
-		<div class="one-half column">
+<main>
+	<h3><i class="fa fa-street-view"></i>&nbsp;&nbsp;Services à prix libre</h3>
+	<section class="featured">
+		<article class="half">
 			<a href="offers.html"><h4><i class="fa fa-info-circle"></i>&nbsp;&nbsp;Nos offres</h4></a>
-			<p><i class="fa fa-exclamation-triangle"></i>&nbsp;&nbsp;Afin de ne pas dégrader l'accès aux services des autres utilisateurices, certains services sont limités.</p>
-		</div>
-		<div class="one-half column">
+			<p><i class="fa fa-exclamation-triangle"></i>&nbsp;&nbsp;Afin de ne pas dégrader l'accès aux services des autres utilisateurices, certains services sont limités à un usage raisonnable.</p>
+		</article>
+		<article class="half">
 			<a href="https://liberapay.com/matunixe/donate"><h4><i class="fa fa-ticket"></i>&nbsp;&nbsp;Faire un don régulier</h4></a>
 			{{ partial "donationBar" }}
-		</div>
-	</div>
-
-	<div class="row center">
-		<h3>Services sans inscription</h3>
-		<div class="one-half column service">
+		</article>
+	</section>
+	<h3>Services sans inscription</h3>
+	<section>
+		<article class="half service">
 			<a class="button" href="https://paste.unixcorn.org"><i class="fa fa-clipboard fa-2x"></i>&nbsp;&nbsp;&nbsp;&nbsp;Partage de texte</a>
-			<br><a href="https://wiki.unixcorn.org/doku.php?id=doc_publique:services:privatebin"><i class="fa fa-info-circle fa-2x"></i></a>
+			<aside>
+				<a href="https://wiki.unixcorn.org/doku.php?id=doc_publique:services:privatebin"><i class="fa fa-info-circle fa-2x"></i></a>
+			</aside>
 			<p>Partagez du texte de façon sécurisée avec <a href="https://privatebin.info">PrivateBin</a>. Idéal pour les configurations, code, logs, ou tout autre document qui n'est pas de nature publique.</p>
-		</div>
-		<div class="one-half column service">
-	  		<a class="button" href="https://pics.unixcorn.org"><i class="fa fa-picture-o fa-2x"></i>&nbsp;&nbsp;&nbsp;&nbsp;Partage d'images</a>
-			<br><a href="https://wiki.unixcorn.org/doku.php?id=doc_publique:services:lutim"><i class="fa fa-info-circle fa-2x"></i></a>
+		</article>
+		<article class="half service">
+			<a class="button" href="https://pics.unixcorn.org"><i class="fa fa-picture-o fa-2x"></i>&nbsp;&nbsp;&nbsp;&nbsp;Partage d'images</a>
+			<aside>
+				<a href="https://wiki.unixcorn.org/doku.php?id=doc_publique:services:lutim"><i class="fa fa-info-circle fa-2x"></i></a>
+			</aside>
 			<p>Partagez vos images (screenshots, photos) avec <a href="https://lut.im/">Lutim</a>, en public ou en privé. Vous pourrez facilement les réutiliser ailleurs sur Internet (forum, chat).</p>
-		</div>
-	</div>
-
-	<div class="row center">
-		<h3>Inscription publique</h3>
-		<div class="one-third column service">
+		</article>
+	</section>
+	<h3>Inscription publique</h3>
+	<section>
+		<article class="third service">
 			<a class="button" href="https://cloud.unixcorn.org"><i class="fa fa-cloud fa-2x"></i>&nbsp;&nbsp;&nbsp;&nbsp;Cloud</a>
-			<br><a href="https://wiki.unixcorn.org/doku.php?id=doc_publique:services:cloud"><i class="fa fa-info-circle fa-2x"></i></a>
+			<aside>
+				<a href="https://wiki.unixcorn.org/doku.php?id=doc_publique:services:cloud"><i class="fa fa-info-circle fa-2x"></i></a>
+			</aside>
 			<p>Besoin d'accéder à vos fichiers depuis plusieurs machines ? <a href="https://nextcloud.com">Nextcloud</a> est là.</p>
 			<i class="fa fa-cog"></i>&nbsp;&nbsp;Espace alloué : 1Go (extensible)
 			<br><i class="fa fa-info-circle"></i>&nbsp;&nbsp;Profil exportable à tout moment
 			<br><br><i class="fa fa-exclamation-triangle"></i>&nbsp;&nbsp;Suppression mensuelle des comptes inutilisés.
-		</div>
-		<div class="one-third column service">
+		</article>
+		<article class="third service">
 			<a class="button" href="https://social.unixcorn.org"><i class="fa fa-users fa-2x"></i>&nbsp;&nbsp;&nbsp;&nbsp;Réseau social</a>
-			<br><i class="fa fa-info-circle fa-2x"></i>
+			<aside>
+				<i class="fa fa-info-circle fa-2x"></i>
+			</aside>
 			<p>Pour rejoindre l'<a href="https://indieweb.org/Main_Page-fr">IndieWeb</a> et blogger de façon autonome en restant connecté⋅e aux silos, <a href="https://withknown.com">Known</a> est fait pour vous.</p>
 			<i class="fa fa-cog"></i>&nbsp;&nbsp;Espace alloué : Usage raisonnable
 			<br><i class="fa fa-info-circle"></i>&nbsp;&nbsp;Profil exportable à tout moment
-		</div>
-		<div class="one-third column service">
+		</article>
+		<article class="third service">
 			<a class="button" href="https://git.unixcorn.org"><i class="fa fa-code-fork fa-2x"></i>&nbsp;&nbsp;&nbsp;&nbsp;Forge (Gitlab)</a>
-			<br><a href="https://wiki.unixcorn.org/doku.php?id=doc_publique:services:gitlab"><i class="fa fa-info-circle fa-2x"></i></a>
+			<aside>
+				<a href="https://wiki.unixcorn.org/doku.php?id=doc_publique:services:gitlab"><i class="fa fa-info-circle fa-2x"></i></a>
+			</aside>
 			<p>Pour coopérer sur un projet versionné en toute sérénité, <a href="https://about.gitlab.com">Gitlab</a> fait des merveilles.</p>
 			<i class="fa fa-cog"></i>&nbsp;&nbsp;Espace alloué : Usage raisonnable
 			<br><i class="fa fa-info-circle"></i>&nbsp;&nbsp;Profil exportable à tout moment
-		</div>
-	</div>
-
-<div class="row center">
-	<h3>Outils internes</h3>
-	<div class="one-third column service">
-		<a class="button" href="https://forum.unixcorn.org"><i class="fa fa-comments-o fa-2x"></i>&nbsp;&nbsp;Forum</a>
-		<br><i class="fa fa-info-circle fa-2x"></i>
-		<p>Un forum de discussion pour régler les éventuels soucis, travailler sur les projets futurs et tout simplement faire vivre notre communauté.</p>
-	</div>
-	<div class="one-third column service">
-		<a class="button" href="https://mail.unixcorn.org"><i class="fa fa-envelope fa-2x"></i>&nbsp;&nbsp;Mail</a>
-		<br><i class="fa fa-info-circle fa-2x"></i> <i class="fa fa-lock fa-2x"></i>
-		<p>Un serveur e-mail complet réservé à l'équipe, il nous permet d'envoyer des e-mails à travers les divers services proposés.</p>
-	</div>
-	<div class="one-third column service">
-		<a class="button" href="irc.html"><i class="fa fa-comments-o fa-2x"></i>&nbsp;&nbsp;Webchat IRC</a>
-		<br><i class="fa fa-info-circle fa-2x"></i>
-		<p>Un client web pour se connecter à notre salon de chat ou n'importe quel réseau IRC.</p>
-    </div>
-</div>
-
-	<div class="row center">
-		<h3>Infrastructure</h3>
-		<div class="one-third column service">
+		</article>
+	</section>
+	<section>
+		<article class="third service">
+			<a class="button" href="https://forum.unixcorn.org"><i class="fa fa-comments-o fa-2x"></i>&nbsp;&nbsp;Forum</a>
+			<aside>
+				<i class="fa fa-info-circle fa-2x"></i>
+			</aside>
+			<p>Un forum de discussion pour régler les éventuels soucis, travailler sur les projets futurs et tout simplement faire vivre notre communauté.</p>
+		</article>
+		<article class="third service">
+			<a class="button" href="https://mail.unixcorn.org"><i class="fa fa-envelope fa-2x"></i>&nbsp;&nbsp;Mail</a>
+			<aside>
+				<i class="fa fa-info-circle fa-2x"></i> <i class="fa fa-lock fa-2x"></i>
+			</aside>
+			<p>Un serveur e-mail complet réservé à l'équipe, il nous permet d'envoyer des e-mails à travers les divers services proposés.</p>
+		</article>
+		<article class="third service">
+			<a class="button" href="irc.html"><i class="fa fa-comments-o fa-2x"></i>&nbsp;&nbsp;Webchat IRC</a>
+			<aside>
+				<i class="fa fa-info-circle fa-2x"></i>
+			</aside>
+			<p>Un client web pour se connecter à notre salon de chat ou n'importe quel réseau IRC.</p>
+		</article>
+	</section>
+	<h3>Infrastructure</h3>
+	<section>
+		<article class="third service">
 			<a href="https://proxmox.com/en/"><img style="max-width: 60%" src="images/external/proxmox-logo.png"></a>
 			<p>« Proxmox Virtual Environment » est une solution complète de virtualisation, basée sur KVM et les conteneurs LXC. Notre entière infrastructure repose sur ces technologies open-source, Proxmox contribue doublement au projet Unixcorn en nous fournissant gracieusement des licences d'utilisation « Enterprise ».</p>
-		</div>
-		<div class="one-third column service">
-			<a href="https://www.debian.org/index.fr.html"><img style="max-height: 10%" src="images/external/openlogo-nd-50.png"></a>
+		</article>
+		<article class="third service">
+			<a href="https://www.debian.org/index.fr.html"><img style="max-height: 80%" src="images/external/openlogo-nd-50.png"></a>
 			<p>« Debian » GNU/Linux est un système d'exploitation libre dit universel. Il est utilisé à tous les niveaux dans notre infrastructure, sur nos serveurs (c'est la base de Proxmox) mais aussi dans chacune de nos machines virtuelles.</p>
-		</div>
-		<div class="one-third column service">
+		</article>
+		<article class="third service">
 			<a href="https://letsencrypt.org"><img style="max-width: 60%" src="images/external/letsencrypt-logo-horizontal.svg"></a>
 			<p>« Let's Encrypt  » est une autorité de certification fournissant des certificats X.509 gratuits pour le protocole TLS. L'ensemble de nos services et sites internet reposent sur des certificats fournis par le projet Let's Encrypt, qui a au passage réellement démocratisé la mise en place du protocole TLS au sein des infrastructures.</p>
-		</div>
-	</div>
-</div>
+		</article>
+	</section>
+</main>
 {{ partial "footer.html" }}
