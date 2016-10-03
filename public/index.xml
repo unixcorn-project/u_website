@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Unixcorn</title>
+    <link>https://unixcorn.org/</link>
+    <description>Recent content on Unixcorn</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr</language>
+    <lastBuildDate>Thu, 01 Sep 2016 20:37:54 +0200</lastBuildDate>
+    <atom:link href="https://unixcorn.org/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Accueil</title>
+      <link>https://unixcorn.org/</link>
+      <pubDate>Thu, 01 Sep 2016 20:37:54 +0200</pubDate>
+      
+      <guid>https://unixcorn.org/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>IRC</title>
+      <link>https://unixcorn.org/irc.html</link>
+      <pubDate>Thu, 01 Sep 2016 20:37:54 +0200</pubDate>
+      
+      <guid>https://unixcorn.org/irc.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Offres</title>
+      <link>https://unixcorn.org/offers.html</link>
+      <pubDate>Thu, 01 Sep 2016 20:37:54 +0200</pubDate>
+      
+      <guid>https://unixcorn.org/offers.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Règles d&#39;utilisation</title>
+      <link>https://unixcorn.org/rules.html</link>
+      <pubDate>Thu, 01 Sep 2016 20:37:54 +0200</pubDate>
+      
+      <guid>https://unixcorn.org/rules.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Services</title>
+      <link>https://unixcorn.org/services.html</link>
+      <pubDate>Thu, 01 Sep 2016 20:37:54 +0200</pubDate>
+      
+      <guid>https://unixcorn.org/services.html</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
