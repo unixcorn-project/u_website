@@ -1,6 +1,6 @@
 # Unixcorn Website
 
-Built with [Hugo](https://github.com/spf13/hugo).
+Built with [Hugo](https://github.com/spf13/hugo). It's our main website, you can reach it in production version here: https://unixcorn.org
 
 ## Unixcorn theme
 
