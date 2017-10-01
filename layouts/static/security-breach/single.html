@@ -15,14 +15,14 @@
 			<ul>
 				<li>Mise en place d'une règle dans l'hôte virtuel de Caddy concerné pour interdir l'accès aux répertoires incriminés.</li>
 				<li>Changement des identifiants et mot-de-passes de l'utilisateur de la base de donnée incriminée.</li>
-			</ul>
+			</ul><hr>
 		<h5>Réponse à Simon Rupf</h5>
 			<p>Envoi à 17h09 (GMT +02:00) de <a target="blank" href="https://paste.unixcorn.org/?f1ba8f04d2389f52#XhjPeDC+bkU3KUgvEcnomYQsuU7vSSP08AWo1M2jE4Q=">la réponse suivante</a> informant Simon de la résolution du problème, le remerciant pour l'information. Suivi d'<a target="blank" href="https://paste.unixcorn.org/?829f8b92ff1ee32f#AoatcjnBmeB96E2wGdPlUwjIYO2LqiyckVNFvyrkC7o=">une nouvelle réponse de sa part</a> reçue à 17h21 (GMT +02:00).</p>
-		<h4>Conclusion</h4>
+		<h5>Conclusion</h5>
 			<p>Les investigations menées à ce jour (analyse approfondie des <i>logs</i> du serveur MariaDB) montrent qu'il n'y a pas eu intrusion dans la base de donnée de notre instance PrivateBin. Les données de nos utilisateur-ice-s n'ont donc pas été compromises.</p>
 			<p>Pour réaliser à pénétrer notre base de donnée les attaquant-e-s auraient dû avoir accès à nos serveurs <i>php-fpm01</i> ou <i>gitea01</i> puis se connecter à notre serveur <i>mariadb01</i> avec un client MySQL à la base de donnée <code>upaste</code> avec les identifiants trouvés dans le fichier de configuration. L'opération précédemment citée est rendue impossible par l'utilisation d'une authentification forte avec <i>OpenSSH</i>, réservant l'accès aux serveur aux clés SSH autorisées. Un pare-feu efficace isolant notre machine <i>mariadb01</i> du réseau local où elle est connectée en autorisant uniqement les connexions vers les bases de données MySQL depuis l'adresse IP locale des serveurs nécessitants l'accès aux bases de données (deux à ce jour).</p> 
 			<p>Veuillez accepter nos excuses pour cette erreur regretable, nous nous efforçons de fournir des services Libres de qualité, nous devons donc nous assurer de la parfaite configuration de notre infrastructure matérielle et logicielle afin de permettre le respect de votre vie privée.</p>
-			<hr />
+			<hr>
 			<p>Page modifiée la dernière fois le 1er octobre 2017.</p>
 	</section>
 </main>
