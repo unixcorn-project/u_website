@@ -2,6 +2,14 @@ body {
 	font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
+h1, h2, h3 {
+    font-weight: 100;
+}
+
+a {
+    text-decoration: none;
+}
+
 header {
     background: white;
 }
@@ -36,4 +44,85 @@ header nav ul {
             color: $black !important;
         }
     }
+}
+
+section {
+    max-width: 1280px;
+    margin: auto;
+    padding: 75px 0px;
+}
+
+.underline::after {
+    background: $black;
+    display: block;
+    height: 1px;
+    width: 30px;
+    content: '';
+    margin: 10px 0px;
+}
+
+.presentation {
+    max-width: 100%;
+    padding: 150px 0px;
+    text-align: center;
+    background: $light-blue;
+}
+
+.services {
+    list-style: none;
+    padding: 0px;
+    display: flex;
+    flex-wrap: wrap;
+
+    li {
+        flex: 1 0 25%;
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        h2, i, .powered-by {
+            display: block;
+            text-align: center;
+        }
+
+        .powered-by {
+            color: $gray;
+        }
+    }
+}
+
+.button {
+    display: block;
+    width: 50%;
+    margin: 20px auto;
+    padding: 10px;
+    border-radius: 100px;
+
+    text-align: center;
+    background: $blue;
+    color: white;
+
+    transition: $transition;
+
+    &:hover {
+        box-shadow: $shadow;
+    }
+}
+
+.flex {
+    display: flex;
+    justify-content: space-around;
+
+    .button {
+        max-width: 25%;
+    }
+}
+
+.card {
+    flex: 1;
+    margin: 0px 30px;
+    padding: 30px;
+    background: $light-blue;
+    box-shadow: $shadow;
 }

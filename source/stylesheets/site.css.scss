@@ -1,7 +1,7 @@
 @import 'normalize.css';
 @import 'font-awesome.min.css';
 @import 'raleway.css';
-
+/*
 body {
 	font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
@@ -48,7 +48,7 @@ footer {
 	vertical-align: middle;
 }
 
-/* Titles */
+/* Titles *
 h1, h2, h3, h4 {
 	font-weight: bold;
 	text-align: center;
@@ -78,7 +78,7 @@ h5 {
 	font-size: 1.1rem;
 }
 
-/* Featured section */
+/* Featured section *
 .featured {
 	background: #474747;
 	border: 5px;
@@ -93,7 +93,7 @@ h5 {
 
 /*
 	Simple flexbox Grid
-*/
+*
 section {
 	display: flex;
     flex-direction: row;
@@ -106,7 +106,7 @@ section {
 /*
 	Columns play around with width, not flex-basis
 	The latter is used to switch to small displays
-*/
+*
 .half {
 	width: 46%;
 }
@@ -118,7 +118,7 @@ section {
 /*
 	Flexbox collapse and vertical margin
 	on smaller screens
-*/
+*
 
 @media screen and (max-width:680px) {
 	section article {
@@ -215,7 +215,7 @@ ul.topnav li.icon {display: none;}
   }
 }
 
-/* Borrowed from Skeleton */
+/* Borrowed from Skeleton *
 a {
   color: #1EAEDB;
   text-decoration: none;}
@@ -241,7 +241,7 @@ a:hover {
 .button:hover, .button:focus {
 	background: #EEE;
 	border-color: #333;
-	/*outline: 0;*/
+	/*outline: 0;*
 }
 
 .button-primary {
@@ -268,7 +268,7 @@ td:last-child {
 
 /*
 	Donation progress bar taken from http://workshop.rs/2012/12/animated-progress-bar-in-4-lines-of-jquery/
-*/
+*
 #progressBar {
     height: 1rem;
     background-color: #292929;
@@ -283,9 +283,9 @@ td:last-child {
 #progressBar div {
     height: 100%;
     background-color: #1cc300;
-    line-height: 1rem; /* same as #progressBar height if we want text middle aligned */
+    line-height: 1rem; /* same as #progressBar height if we want text middle aligned *
 	border-radius: 2px;
 	box-shadow: 0 5px 5px #ccc inset;
-}
+}*/
 @import 'variables.scss';
 @import 'base.scss';

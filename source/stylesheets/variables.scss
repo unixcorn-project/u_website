@@ -2,4 +2,5 @@ $black: black;
 $gray: gray;
 $blue: #3EC4EE;
 $light-blue: #F5FAFB;
-$transition: all 0.1s ease-in;
+$transition: all 0.2s ease-in;
+$shadow: 0px 2px 2px transparentize($gray, 0.8);

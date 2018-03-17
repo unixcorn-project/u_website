@@ -1,58 +1,50 @@
 <main>
-    <section>
-    	<article>
-		  <p>Unixcorn fournit des services respectueux de votre vie privée et donc construits avec du logiciel libre. Nos serveurs sont hébergés en Europe, à Falkenstein, en Allemagne 🇩🇪.</p>
-		</article>
-	</section>
-	<h3>Services</h3>
-	<section class="featured">
-		<article class="third">
-			<br><a class="button" href="https://paste.unixcorn.org" ><i class="fa fa-clipboard fa-2x" ></i>&nbsp;&nbsp;&nbsp;&nbsp;Textes et snippets (PrivateBin)</a>
-	  		<br><a class="button" href="https://drop.unixcorn.org" ><i class="fa fa-cloud-upload fa-2x" ></i>&nbsp;&nbsp;&nbsp;&nbsp;Échange de fichiers (Jirafeau)</a>
-		</article>
-		<article class="third">
-			<br><a class="button" href="https://pad.unixcorn.org" ><i class="fa fa-edit fa-2x" ></i>&nbsp;&nbsp;&nbsp;&nbsp;Pads Markdown (HackMD)</a>
-      			<br><a class="button" href="https://unixcorn.xyz" ><i class="fa fa-share-square-o fa-2x" ></i>&nbsp;&nbsp;&nbsp;&nbsp;Réseau social (Mastodon)</a>
-		</article>
-		<article class="third">
-			<br><a class="button" href="https://cloud.unixcorn.org"><i class="fa fa-cloud fa-2x"></i>&nbsp;&nbsp;&nbsp;&nbsp;Instance cloud (Nextcloud)</a>				
-			<br><a class="button" href="https://yt-dl.unixcorn.org" ><i class="fa fa-youtube fa-2x" ></i>&nbsp;&nbsp;&nbsp;&nbsp;Téléchargement de vidéos (Alltube)</a>
-		</article>	
-		<article class="third">
-			<br><h5><i class="fa fa-info-circle" ></i>&nbsp;&nbsp;Voyez nos <a href="services.html">services</a> plus en détail.</h5>
-		</article>
-		<article class="third">
-			<br><h5><i class="fa fa-server" ></i>&nbsp;&nbsp;Voyez <a href="https://status.unixcorn.org">l'état des services</a> en temps réel.</h5>
-		</article>
+    <section class="presentation">
+		<h1>Unixcorn</h1>
+		<p>Unixcorn fournit des services respectueux de votre vie privée et donc construits avec du logiciel libre.</p>
+		<p>Nos serveurs sont hébergés en Europe, à Falkenstein, en Allemagne. 🇩🇪</p>
 	</section>
 	<section>
-		<article class="half">
-			<h4 class="center">Support</h4>
-			<p>Vous avez une question ou un problème ?</p>
-			<table>
-				<tr>
-					<td><i class="fa fa-commenting fa-2x" ></i></td>
-					<td>Chattez en direct sur la <a href="https://chat.unixcorn.org">messagerie instantanée</a></td>
-				</tr>
-				<tr>
-					<td><i class="fa fa-question-circle fa-2x" ></i></td>
-					<td>Parcourez le <a href="http://forum.unixcorn.org">forum de discussion</a></td>
-				</tr>
-			</table>
+		<h2 class="underline">Services</h2>
+		<ul class="services">
+			<% data.services.each do |s| %>
+				<li>
+					<h2><%= s.name %></h2>
+					<i class="fa fa-<%= s.icon %> fa-2x"></i>
+					<p><%= s.description %></p>
+					<p class="powered-by">Propulsé par <%= s.app %></p>
+					<a class="button" href="<%= s.url %>">Ouvrir</a>
+				</li>
+			<% end %>
+		</ul>
+	</section>
+	<section>
+		<p>Vous souhaitez en apprendre plus sur les services que nous proposons ?</p>
+
+		<div class="flex">
+			<a class="button" href="/services">Détails de nos services</a>
+			<a class="button" href="https://status.unixcorn.org">État de nos services</a>
+			<a class="button" href="/infrastructure">Notre infrastructure</a>
+		</div>
+	</section>
+	<section class="flex">
+		<article class="card">
+			<h2 class="underline">Support</h2>
+			<p>
+				Vous avez une question ou un problème&nbsp;? Nous serons ravis de vous aider.
+				Venez chattez en direct sur la <a href="https://chat.unixcorn.org">messagerie instantanée</a>, ou
+				parcourez le <a href="http://forum.unixcorn.org">forum de discussion</a>.
+			</ul>
 		</article>
-		<article class="half">
-			<h4 class="center">Contribuer</h4>
-			<p>Unixcorn est un projet Libre auquel⋅le chacun⋅e peut participer&nbsp;:</p>
-			<table>
-				<tr>
-					<td><i class="fa fa-pencil fa-2x"></i></td>
-					<td>En écrivant de la <a href="https://doc.unixcorn.org">documentation</a></td>
-				</tr>
-				<tr>
-					<td><i class="fa fa-money fa-2x"></i></td>
-					<td>Donnez de l'argent sur <a href="https://liberapay.com/unixcorn-project/donate">Liberapay</a> pour notre projet</td>
-				</tr>
-			</table>
+		<article class="card">
+			<h2 class="underline">Contribuer</h2>
+			<p>
+				Unixcorn est un projet Libre auquel⋅le chacun⋅e peut participer&nbsp;:
+				en écrivant de la <a href="https://doc.unixcorn.org">documentation</a>,
+				ou en donnant de l'argent sur <a href="https://liberapay.com/unixcorn-project/donate">Liberapay</a>
+				pour notre projet
+			</p>
+			</ul>
 		</article>
 	</section>
 </main>
