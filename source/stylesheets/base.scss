@@ -10,7 +10,7 @@ a {
     text-decoration: none;
 }
 
-a:hover, a:active {
+a:not(.button):hover, a:not(.button):active {
     color: $blue !important;
     transition: $transition;
 }
