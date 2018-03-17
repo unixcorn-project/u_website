@@ -8,13 +8,15 @@
 		<h2 class="underline">Services</h2>
 		<ul class="services">
 			<% data.services.each do |s| %>
-				<li>
-					<h2><%= s.name %></h2>
-					<i class="fa fa-<%= s.icon %> fa-2x"></i>
-					<p><%= s.description %></p>
-					<p class="powered-by">Propulsé par <%= s.app %></p>
-					<a class="button" href="<%= s.url %>">Ouvrir</a>
-				</li>
+				<% if !s.hide_on_homepage %>
+					<li class="service">
+						<h2><%= s.name %></h2>
+						<i class="fa fa-<%= s.icon %> fa-2x"></i>
+						<p><%= s.description %></p>
+						<p class="powered-by">Propulsé par <%= s.app %></p>
+						<a class="button" href="<%= s.url %>">Ouvrir</a>
+					</li>
+				<% end %>
 			<% end %>
 		</ul>
 	</section>

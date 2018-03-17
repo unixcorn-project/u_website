@@ -74,22 +74,23 @@ section {
     padding: 0px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
+}
 
-    li {
-        flex: 1 0 25%;
-        padding: 30px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
+.service {
+    width: 25%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 
-        h2, i, .powered-by {
-            display: block;
-            text-align: center;
-        }
+    h2, i, .powered-by {
+        display: block;
+        text-align: center;
+    }
 
-        .powered-by {
-            color: $gray;
-        }
+    .powered-by {
+        color: $gray;
     }
 }
 

@@ -1,98 +1,43 @@
 <main>
-	<h3>Services sans inscription</h3>
-	<section>
-		<article class="half service">
-			<a class="button" href="https://paste.unixcorn.org"><i class="fa fa-clipboard fa-2x"></i>&nbsp;&nbsp;&nbsp;&nbsp;Partage de texte</a>
-			<aside>
-				<a href="#"><i class="fa fa-info-circle fa-2x"></i></a>
-			</aside>
-			<p>Partagez du texte de façon sécurisée avec <a href="https://privatebin.info">PrivateBin</a>. Idéal pour les configurations, code, logs, ou tout autre document qui n'est pas de nature publique.</p>
-		</article>
-		<article class="half service">
-                        <a class="button" href="https://pad.unixcorn.org"><i class="fa fa-edit fa-2x"></i>&nbsp;&nbsp;&nbsp;&nbsp;Pads</a>
-                        <aside>
-                                <a href="#"><i class="fa fa-info-circle fa-2x"></i></a>
-                        </aside>
-			<p>Rédigez collaborativement et en temps réel avec vos équipes des documents Markdown avec <a href="https://github.com/hackmdio/hackmd">HackMD</a>. Vous pouvez créer un compte pour sauvegarder vos documents.</p>
-                </article>
+	<section class="presentation">
+		<h1>Nos services</h1>
+		<p>Afin de ne pas dégrader l'accès aux services des autres utilisateur⋅ice⋅s, certains services sont limités dans leur usage.</p>
+		<a href="https://liberapay.com/unixcorn-project/donate"><h4>Faire un don régulier</h4></a>
+		<h5>Dons: 50€/mois. Coûts: 100€/mois.</h5>
 	</section>
+
 	<section>
-		<article class="half service">
-      <a class="button" href="https://drop.unixcorn.org"><i class="fa fa-cloud-upload fa-2x"></i>&nbsp;&nbsp;&nbsp;&nbsp;Partage de fichiers divers</a>
-      <aside>
-        <a href="#"><i class="fa fa-info-circle fa-2x"></i></a>
-      </aside>
-      <p>Partagez vos fichiers divers (archives, etc) avec <a href="https://gitlab.com/mojo42/Jirafeau">Jirafeau</a>. Vous pouvez téléverser jusqu'à 8 Go, les protéger avec un mot-de-passe et les garder en ligne jusqu'à un mois .</p>
-	</article>
-	<article class="half service">
-      <a class="button" href="https://yt-dl.unixcorn.org"><i class="fa fa-youtube fa-2x"></i>&nbsp;&nbsp;&nbsp;&nbsp;YouTube download</a>
-      <aside>
-	      <a href="#"><i class="fa fa-info-circle fa-2x"></i></a>
-      </aside>
-      <p>Téléchargez des vidéos YouTube, convertissez les ou extrayez en le son avec <a href="https://code.unixcorn.org/unixcorn-project/Alltube">Alltube</a>.</p>
-    </article>
+		<h2 class="underline">Services sans inscription</h2>
+		<ul class="services">
+			<% data.services.each do |s| %>
+				<% if !s.requires_account %>
+					<li class="service">
+						<h2><%= s.name %></h2>
+						<i class="fa fa-<%= s.icon %> fa-2x"></i>
+						<p><%= s.description %></p>
+						<p class="powered-by">Propulsé par <%= s.app %></p>
+						<a class="button" href="<%= s.url %>">Ouvrir</a>
+					</li>
+				<% end %>
+			<% end %>
+		</ul>
 	</section>
-	<section class="featured">
-		<article class="half">
-			<h4><i class="fa fa-info-circle"></i>&nbsp;&nbsp;Nos offres</h4>
-			<p><i class="fa fa-exclamation-triangle"></i>&nbsp;&nbsp;Afin de ne pas dégrader l'accès aux services des autres utilisateur-ice-s, certains services sont limités dans leur usage.</p>
-		</article>
-		<article class="half">
-			<a href="https://liberapay.com/unixcorn-project/donate"><h4><i class="fa fa-money"></i>&nbsp;&nbsp;Faire un don régulier</h4></a>
-			<br>
-            <h5>Dons: 50€/mois. Coûts: 100€/mois.</h5>
-            <div id="progressBar" class="big-green"><div style="width: 50%;"></div></div>
-		</article>
-	</section>
-	<h3>Inscription publique</h3>
+
 	<section>
-		<article class="half service">
-			<a class="button" href="https://cloud.unixcorn.org"><i class="fa fa-cloud fa-2x"></i>&nbsp;&nbsp;&nbsp;&nbsp;Plateforme cloud (Nextcloud)</a>
-			<aside>
-				<a href="https://doc.unixcorn.org/doku.php?id=services:cloud:cloud"><i class="fa fa-info-circle fa-2x"></i></a>
-			</aside>
-			<p>Besoin d'accéder à vos fichiers depuis plusieurs machines ? <a href="https://nextcloud.com">Nextcloud</a> est là.</p>
-			<i class="fa fa-cog"></i>&nbsp;&nbsp;Espace alloué : 1Go
-			<br><i class="fa fa-info-circle"></i>&nbsp;&nbsp;Profil exportable à tout moment
-			<br><br><i class="fa fa-exclamation-triangle"></i>&nbsp;&nbsp;Suppression mensuelle des comptes inutilisés.
-		</article>
-		<article class="half service">
-			<a class="button" href="https://forum.unixcorn.org"><i class="fa fa-comments-o fa-2x"></i>&nbsp;&nbsp;Forum (Flarum)</a>
-			<aside>
-				<a href="#"><i class="fa fa-info-circle fa-2x"></i></a>
-			</aside>
-			<p>Un forum de discussion pour régler les éventuels soucis, travailler sur les projets futurs et tout simplement faire vivre notre communauté.</p>
-		</article>
-	</section>
-	<section>
-		<article class="half service">
-			<a class="button" href="https://unixcorn.xyz"><i class="fa fa-share-square-o fa-2x"></i>&nbsp;&nbsp;Réseau social (Mastodon)</a>
-			<aside>
-				<a href="#"><i class="fa fa-info-circle fa-2x"></i></a>
-			</aside>
-			<p>Notre instance du réseau social décentralisé <a href="https://joinmastodon.org">Mastodon</a>, nous y pratiquons une modération agressive pour garder notre espace <i>safe</i> pour tou-te-s.</p>
-		</article>
-		<article class="half service">
-			<a class="button" href="https://chat.unixcorn.org"><i class="fa fa-commenting fa-2x"></i>&nbsp;&nbsp;Salons de discussion (Mattermost)</a>
-			<aside>
-				<a href="#"><i class="fa fa-info-circle fa-2x"></i></a>
-			</aside>
-			<p><a href="https://about.mattermost.com">Mattermost</a> est un service de messagerie instantanée concurrent de Slack, discutez dans les salons publics, privés et mettez en place votre propre groupe.</p>
-		</article>
-	</section>
-	<h3>Infrastructure</h3>
-	<section>
-		<article class="third service">
-			<a href="https://proxmox.com/en/"><img style="max-width: 60%" src="images/external/proxmox.png"></a>
-			<p>« Proxmox Virtual Environment » est une solution complète de virtualisation, basée sur KVM et les conteneurs LXC. Notre infrastructure repose sur ces technologies open-source, Proxmox contribue doublement en nous fournissant gracieusement des licences d'utilisation « Enterprise ».</p>
-		</article>
-		<article class="third service">
-			<a href="https://www.debian.org/index.fr.html"><img style="max-height: 80%" src="images/external/debian.png"></a>
-			<p>« Debian » GNU/Linux est un système d'exploitation libre dit universel. Il est utilisé à tous les niveaux dans notre infrastructure, que ce soit en entrée sur nos proxy ou en back-end avec nos bases de données.</p>
-		</article>
-		<article class="third service">
-			<a href="https://caddyserver.com"><img style="max-width: 60%" src="images/external/caddy.png"></a>
-			<p>« Caddy  » est un serveur web HTTP/2 avec intégration automatique du protocole de chiffrement TLS. L'ensemble de nos services et sites internet sont servis par nos front-end Caddy et les certificats du projet Let's Encrypt.</p>
-		</article>
+		<h2 class="underline">Inscription publique requise</h2>
+		<ul class="services">
+			<% data.services.each do |s| %>
+				<% if s.requires_account %>
+					<li class="service">
+						<h2><%= s.name %></h2>
+						<i class="fa fa-<%= s.icon %> fa-2x"></i>
+						<p><%= s.description %></p>
+						<p><%= s.more_info %></p>						
+						<p class="powered-by">Propulsé par <%= s.app %></p>
+						<a class="button" href="<%= s.url %>">Ouvrir</a>
+					</li>
+				<% end %>
+			<% end %>
+		</ul>
 	</section>
 </main>
