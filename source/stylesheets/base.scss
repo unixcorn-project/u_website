@@ -10,6 +10,11 @@ a {
     text-decoration: none;
 }
 
+a:hover, a:active {
+    color: $blue !important;
+    transition: $transition;
+}
+
 header {
     background: white;
 }
@@ -32,10 +37,6 @@ header nav ul {
 
         a {
             color: $gray !important;
-            transition: $transition;
-        }
-        a:hover, a:active {
-            color: $blue !important;
         }
     }
     .name {
@@ -125,4 +126,16 @@ section {
     padding: 30px;
     background: $light-blue;
     box-shadow: $shadow;
+}
+
+footer {
+    margin-top: 75px;
+    padding: 30px;
+    background: $black;
+    color: white;
+    text-align: center;
+
+    a, a:visited {
+        color: white;
+    }
 }
