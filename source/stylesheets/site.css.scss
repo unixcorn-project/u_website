@@ -1,24 +1,289 @@
+@import 'normalize.css';
+@import 'font-awesome.min.css';
+@import 'raleway.css';
+
 body {
-  background-color: #fbc547;
-  color: #333;
-  font-family: -apple-system, BlinkMacSystemFont, "Avenir Next", "Avenir",
-    "Segoe UI", "Lucida Grande", "Helvetica Neue", "Helvetica", "Fira Sans",
-    "Roboto", "Noto", "Droid Sans", "Cantarell", "Oxygen", "Ubuntu",
-    "Franklin Gothic Medium", "Century Gothic", "Liberation Sans", sans-serif;
-  padding: 18vh 1rem;
-  text-align: center;
+	font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-a {
-  color: rgba(#000, 0.7);
+.invisible {
+	display: none;
+}
 
-  &:focus,
-  &:hover {
-    color: rgba(#000, 0.6);
+h1, h2, h3, h4, section {
+	margin: 1rem auto 1rem auto;
+}
+
+section {
+	padding: 1% 0 1% 0;
+}
+
+section article {
+	text-align: center;
+}
+
+section article .button {
+	margin-bottom: 0.5rem;
+}
+
+section article p {
+	text-align: justify;
+}
+
+.service aside {
+	margin-top: 0.2rem;
+}
+
+.service p {
+	text-align: center;
+}
+
+footer {
+	text-align: center;
+	margin-top: 2%;
+	margin-bottom: 2%;
+}
+
+.fa {
+	vertical-align: middle;
+}
+
+/* Titles */
+h1, h2, h3, h4 {
+	font-weight: bold;
+	text-align: center;
+}
+
+article h1, article h2, article h3, article h4, article h5 {
+	margin: 0;
+}
+
+h1 {
+	font-size: 3.5rem;
+}
+
+h2 {
+	font-size: 3.0rem;
+}
+
+h3 {
+	font-size: 2.5rem;
+}
+
+h4 {
+	font-size: 2.0rem;
+}
+
+h5 {
+	font-size: 1.1rem;
+}
+
+/* Featured section */
+.featured {
+	background: #474747;
+	border: 5px;
+	border-radius: 10px;
+	color: #EEE;
+}
+
+.featured .button {
+	color: #333;
+	border-color: #EEE;
+}
+
+/*
+	Simple flexbox Grid
+*/
+section {
+	display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: stretch;
+    flex-wrap: wrap;
+    width: 80%;
+}
+
+/*
+	Columns play around with width, not flex-basis
+	The latter is used to switch to small displays
+*/
+.half {
+	width: 46%;
+}
+
+.third {
+	width: 31%;
+}
+
+/*
+	Flexbox collapse and vertical margin
+	on smaller screens
+*/
+
+@media screen and (max-width:680px) {
+	section article {
+		flex-basis: 100%;
+		margin: 1rem 5% 1rem 5%;
+	}
+	
+	section {
+		width: 90%;
+	}
+}
+
+
+/*
+	Top navigation menu
+		Taken from http://www.w3schools.com/howto/howto_js_topnav.asp
+*/
+
+
+/* Remove margins and padding from the list, and add a black background color */
+#header-top {
+	position: fixed;
+  	width: 100%;
+  	background: #474747;
+  	padding: 5px; 
+}
+
+ul.topnav {
+	list-style-type: none;
+	margin: auto;
+	padding: 0;
+	overflow: hidden;
+	background-color: #474747;
+	line-height: 1.5;
+	text-align: center;
+	width: 80%;
+}
+
+ul.topnav li:first-child i {
+	color: #3ec4ee;
+	font-weight: bolder;
+}
+
+/* Float the list items side by side */
+ul.topnav li {
+	float: left;
+	margin: 0 0 0.1rem 0;
+	padding: 0 1em 0;
+}
+
+/* Style the links inside the list items */
+ul.topnav li a {
+    display: inline-block;
+    color: #f2f2f2;
+    text-align: center;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 1.5rem;
+	font-variant: small-caps;
+	font-weight: bold;
+}
+
+/* Change background color of links on hover */
+ul.topnav li a:hover {color: #3ec4ee;}
+
+/* Hide the list item that contains the link that should open and close the topnav on small screens */
+ul.topnav li.icon {display: none;}
+
+ /* When the screen is less than 680 pixels wide, hide all list items, except for the first one ("Home"). Show the list item that contains the link to open and close the topnav (li.icon) */
+@media screen and (max-width:680px) {
+  ul.topnav li:not(:first-child) {display: none;}
+  ul.topnav li.icon {
+    float: right;
+    display: inline-block;
   }
 }
 
-.middleman-logo {
-  margin-bottom: 1rem;
-  width: 10rem;
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens */
+@media screen and (max-width:680px) {
+  ul.topnav.responsive {position: relative;}
+  ul.topnav.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  ul.topnav.responsive li {
+    float: none;
+    display: inline;
+  }
+  ul.topnav.responsive li a {
+    display: block;
+    text-align: left;
+	padding: 0 0 0 1em;
+  }
+}
+
+/* Borrowed from Skeleton */
+a {
+  color: #1EAEDB;
+  text-decoration: none;}
+a:hover {
+  color: #0FA0CE;
+  text-decoration: none;}
+  
+.button {
+    border: 1px solid #EEE;
+    border-radius: 4px;
+    color: #333;
+	background: #EEE;
+    padding: 0.4rem 1rem 0.4rem 1rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 0.7rem;
+    letter-spacing: 0.1rem;
+}
+
+.button:hover, .button:focus {
+	background: #EEE;
+	border-color: #333;
+	/*outline: 0;*/
+}
+
+.button-primary {
+	color: #FFF;
+	background-color: #33C3F0;
+	border-color: #33C3F0;
+}
+
+.button-primary:hover, .button-primary:focus {
+	background-color: #1EAEDB;
+	border-color: #1EAEDB;
+}
+
+th,td {
+  padding: 0.5rem;
+  text-align: left;
+  border-bottom: 1px solid #E1E1E1; }
+th:first-child,
+td:first-child {
+  padding-left: 0; }
+th:last-child,
+td:last-child {
+  padding-right: 0; }
+
+/*
+	Donation progress bar taken from http://workshop.rs/2012/12/animated-progress-bar-in-4-lines-of-jquery/
+*/
+#progressBar {
+    height: 1rem;
+    background-color: #292929;
+	margin: 0 auto 0 auto;
+	padding: 0.1rem;
+	border: 1px solid #111;
+	border-radius: 2px;
+	box-shadow: 0 2px 3px #333;
+	width: 90%;
+}
+
+#progressBar div {
+    height: 100%;
+    background-color: #1cc300;
+    line-height: 1rem; /* same as #progressBar height if we want text middle aligned */
+	border-radius: 2px;
+	box-shadow: 0 5px 5px #ccc inset;
 }
