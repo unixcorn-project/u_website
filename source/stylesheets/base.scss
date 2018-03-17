@@ -1,0 +1,39 @@
+body {
+	font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+header {
+    background: white;
+}
+
+header nav ul {
+    max-width: 1280px;
+    margin: auto;
+    padding: 30px 0px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    list-style: none;
+    li {
+        display: inline;
+        flex: 1 auto;
+        text-transform: uppercase;
+        font-weight: bold;
+
+        a {
+            color: $gray !important;
+            transition: $transition;
+        }
+        a:hover, a:active {
+            color: $blue !important;
+        }
+    }
+    .name {
+        flex: 10;
+        a {
+            color: $black !important;
+        }
+    }
+}

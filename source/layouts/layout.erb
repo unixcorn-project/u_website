@@ -68,32 +68,19 @@
   <body>
     <header>
       <nav>
-        <div id="header-top" style="">
-          <ul class="topnav" id="myTopnav">
-            <li><img src="https://unixcorn.org/images/unixcorn_logo.png" alt="logo">
-            </li><li><a href="index.html">&nbsp;Accueil</a></li>
-            <li><a href="https://chat.unixcorn.org">Chat</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="https://doc.unixcorn.org">Wiki</a></li>
-            <li><a href="rules.html">CGU</a></li>
-          </ul>
-        </div>
+		<ul>
+			<li class="name"><a href="/">Unixcorn</a></li>
+			<li><a href="/">&nbsp;Accueil</a></li>
+			<li><a href="https://chat.unixcorn.org">Chat</a></li>
+			<li><a href="services.html">Services</a></li>
+			<li><a href="https://doc.unixcorn.org">Wiki</a></li>
+			<li><a href="rules.html">CGU</a></li>
+		</ul>
       </nav>
-        <div class="invisible h-card">
-          <a class="u-url" href="https://unixcorn.org">
-            <img class="u-photo" src="images/profile.png">
-            <span class="p-name">Unixcorn</span>
-          </a>
-          <p class="p-note">Unixcorn.org, site web de licornes fanatiques. Hébergement et services web à prix libre mais non gratuit. Le tout propulsé par des technologies libres et respectueuses de votre vie privée.</p>
-          <div>
-            <a href="https://twitter.com/unixcornproject" title="Twitter" rel="me" class="u-url"><i class="fa fa-2x fa-twitter"></i></a>
-            <a href="https://code.unixcorn.org/unixcorn-project" title="GitHub" rel="me" class="u-url"><i class="fa fa-2x fa-github"></i></a>
-            <a href="mailto:root@unixcorn.org" title="e-mail" rel="me" class="u-email"><i class="fa fa-2x fa-at"></i></a>
-          </div>
-      </div>
-      <center style="padding-top: 85px"><a href="https://unixcorn.org"><img style="max-width: 70%" src="https://unixcorn.org/images/wide_banner.png"></a></center>
     </header>
+
     <%= yield %>
+
     <footer class="row center">
 			<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="images/external/cc-by-nc-sa.png" /></a><br />© 2015-2018 <a href="https://unixcorn.org">Unixcorn Project</a>
 			<br><a class="button button-primary" href="http://unixcorn.org/rules.html">CGU</a> <a class="button button-primary" href="http://unixcorn.org/legals.html">Mentions légales</a>
