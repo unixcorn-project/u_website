@@ -110,9 +110,8 @@ section {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    text-align: left;
 
-    h2, i, .powered-by {
+    h2, i, .powered-by, p {
         display: block;
         text-align: center;
     }
