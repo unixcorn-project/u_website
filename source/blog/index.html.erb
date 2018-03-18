@@ -1,0 +1,30 @@
+---
+pageable: true
+per_page: 5
+---
+<main>
+    <section class="presentation">
+        <h1>Blog</h1>
+    </section>
+    <section>
+        <% if paginate && num_pages > 1 %>
+        <p>Page <%= page_number %> sur <%= num_pages %></p>
+
+        <% if prev_page %>
+            <p><%= link_to 'Page précédente', prev_page %></p>
+        <% end %>
+        <% end %>
+
+        <% page_articles.each_with_index do |article, i| %>
+            <h2><%= link_to article.title, article %></h2>
+            <p>Le <%= article.date.strftime '%d/%m/%y' %></p>
+            <%= article.summary(250, '…') %>
+        <% end %>
+
+        <% if paginate %>
+        <% if next_page %>
+            <p><%= link_to 'Page suivante', next_page %></p>
+        <% end %>
+        <% end %>
+    </section>
+</main>

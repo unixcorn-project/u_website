@@ -15,3 +15,12 @@ middleman
 ```bash
 middleman build
 ```
+
+## Writing new articles
+
+```bash
+middleman article -s -t tag -t unixcorn 'My title'
+```
+
+Then edit the newy created file in `source/blog`.
+You can add media to the corresponding folder and use them in your article as if they were in the same directory.
