@@ -1,0 +1,34 @@
+<% author = (data.authors.select { |a| a.name == current_article.data['author'] }).first %>
+
+<% wrap_layout :layout do %>
+  <section class="presentation">
+    <h1><%= current_article.title %></h1>   
+    <p>
+        Par <%= author.display_name || author.name %><% if current_article.data['category'] %>, dans <%= current_article.data['category'] %><% end %>
+    </p> 
+  </section>
+  <section class="blog">
+    <%= current_article.body %>
+  </section>
+  <section>
+    <aside class="flex space-between">
+        <div class="tags">
+            <% current_article.tags.each do |t| %>
+                <a href="/blog/tag/<%= t %>">#<%= t %></a>
+            <% end %>
+        </div>
+        <div>
+            <a href="web+mastodon://share?text=<%= current_article.title %> - Unixcorn%0D%0A%0D%0Ahttps://unixcorn.org<%= current_article.url %>">
+                <i class="fa fa-share"></i> Partager sur Mastodon
+            </a>
+        </div>
+    </aside>
+    <div class="author">
+        <img src="/images/avatars/<%= author.name %>.png" />
+        <div>
+            <h2>Écrit par <%= author.display_name || author.name %></h2>
+            <p class="date">Le <%= current_article.date.strftime '%d/%m/%y' %></p>
+        </div>
+    </div>
+  </section>
+<% end %>

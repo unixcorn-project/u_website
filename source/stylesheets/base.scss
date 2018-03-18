@@ -145,6 +145,10 @@ section {
     .button {
         max-width: 25%;
     }
+
+    &.space-between {
+        justify-content: space-between;
+    }
 }
 
 .card {
@@ -153,6 +157,37 @@ section {
     padding: 30px;
     background: $light-blue;
     box-shadow: $shadow;
+}
+
+.tags a {
+    margin: 10px 15px;
+}
+
+.author {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+
+    img {
+        width: 100px;
+        height: 100px;
+        border-radius: 100%;
+        box-shadow: $shadow;
+        margin-right: 30px;
+    }
+}
+
+.blog {
+    border-bottom: 2px solid $light-blue;
+
+    img {
+        display: block;
+        margin: 30px auto;
+    }
+
+    code {
+        background: $light-blue;
+    }
 }
 
 footer {
