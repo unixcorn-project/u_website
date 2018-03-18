@@ -34,16 +34,16 @@
     {
         "name": "Instance cloud",
         "icon": "cloud",
-        "description": "Synchronisez vos fichiers entre vos différents appareils et partagez les.",
-        "more_info": "Vous aurez droit à 1Go de stockage. Votre profil est exportable à tout moment. Les comptes inactifs sont supprimés une fois par mois",
-        "app": "NextCloud",
+        "description": "Synchronisez vos fichiers, calendriers, répertoires de contacts et listes de tâches entre vos différents appareils et partagez les.",
+        "more_info": "De base 1Go de stockage. Votre profil est exportable à tout moment. Les comptes inactifs sont supprimés au bout de 30 jours",
+        "app": "Nextcloud",
         "url": "https://cloud.unixcorn.org",
         "requires_account": true
     },
     {
         "name": "Téléchargement de vidéos",
         "icon": "youtube",
-        "description": "Téléchargez des vidéos YouTube, convertissez les ou extrayez en le son.",
+        "description": "Téléchargez des vidéos (YouTube, Dalymotion, Vimeo…), convertissez les ou extrayez en le son.",
         "app": "Alltube",
         "url": "https://yt-dl.unixcorn.org",
         "requires_account": false
