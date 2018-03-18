@@ -1,0 +1,16 @@
+[Unit]
+Description=Unixcorn's website
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/home/u_website/.rbenv/shims/middleman
+Restart=always
+RestartSec=10
+WorkingDirectory=/home/u_website/u_website
+User=u_website
+Group=u_website
+LimitNOFILE=49152
+
+[Install]
+WantedBy=multi-user.target
