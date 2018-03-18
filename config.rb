@@ -16,6 +16,9 @@ activate :blog do |blog|
   blog.permalink = "blog/{year}/{title}.html"
 
   blog.layout = "blog_layout"
+  blog.taglink = "blog/tag/{tag}"
+  blog.tag_template = "blog/tag.html"
+  blog.paginate = true
 end
 
 activate :directory_indexes
