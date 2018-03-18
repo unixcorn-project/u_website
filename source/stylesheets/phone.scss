@@ -1,0 +1,27 @@
+@media screen and (max-width: 720px) {
+    header nav {
+        flex-flow: column;
+        line-height: 2em;
+    }
+
+    section {
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+    }
+
+    .service {
+        width: 100%;
+    }
+
+    .flex {
+        flex-flow: column;
+        .button {
+            width: auto;
+            max-width: initial;
+        }
+    }
+
+    .card {
+        margin: 30px 0px;
+    }
+}
