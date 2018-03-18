@@ -1,9 +1,17 @@
 # Unixcorn Website
 
-Built with [Hugo](https://github.com/spf13/hugo) for our main website.
+Built with [Middleman](https://middlemanapp.com/) for our main website.
 
-## Unixcorn theme
+## Running
 
-Unixcorn theme will be used to make the blog in the future. In the meantime it just has layouts for the static pages on the site.
+Refer to the Middleman website to know how to install it.
 
-Template is powered by [Skeleton boilerplate](http://getskeleton.com).
+```bash
+middleman
+```
+
+## Building for production
+
+```bash
+middleman build
+```

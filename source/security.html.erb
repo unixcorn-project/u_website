@@ -1,0 +1,29 @@
+---
+title: Annonces importantes liées à la sécurité
+---
+
+<main>
+	<section class="presentation">
+		<h1>Annonces importantes liées à la sécurité</h1>
+	</section>
+	<section>
+		<h4>01/10/2017 - Faille de sécurité « Partage de texte » (PrivateBin)</h4>
+			<p>Dimanche 1er octobre 2017 à 16h58 (GMT +02:00) nous avons été notifié sur notre adresse e-mail de contact de la découverte d'une importante faille de sécurité sur notre instance publique de PrivateBin. Voici le détail de ce signalement, de l'impact possible pour nos utilisateur-ice-s et des opérations réalisées suite à cette information.</p>
+		<h5>Erreur humaine lors de la migration du serveur web de notre serveur php-fpm01</h5>
+			<p>Lors de la migration de Nginx vers Caddy, jeudi 28 septembre 2017 à 20h30 (GMT +02:00), mauvaise configuration de l'hôte virtuel permettant la configuration de PrivateBin au niveau de notre serveur web Caddy.</p>
+			<p>L'ensemble des répertoires normalement privés de PrivateBin (cfg, doc, data, lib, tpl, tst et vendor) se retrouvent exposés sur internet. Les données étant stockées en base de donnée, le plus problématique étant donc le fichier de configuration <code>/cfg/conf.ini</code> contenant les accès à cette dernière.</p>
+			<p>Base de donnée MySQL hébergée sur un serveur dédié à MariaDB, joignable depuis un utilisateur dédié avec les droits d'accès uniquement à la base de donnée <code>upaste</code>. Ce serveur non joignable depuis l'internet reste accessible depuis le réseau local de notre hébergeur DigitalOcean dans son centre de données à Francfort (Allemagne).</p>
+		<h5>Découverte de la faille de sécurité</h5>
+			<p>Simon Rupf, mainteneur de PrivateBin, nous informe par e-mail à 16h58 (GMT +02:00) de la découverte de cette faille de sécurité par un tiers (non connu à ce jour). Voici l'e-mail reçu, <a target="blank" href="https://paste.unixcorn.org/?9ea5f2974461a849#jCvPhx1lPvkRLpm0qe4hfF3ymK08zSKiIinm9sJN6rk=">le lire sur notre instance PrivateBin</a>.</p>
+		<h5>Application de correctifs</h5>
+			<p>Dès réception de l'e-mail de Simon, applications des correctifs appropriés pour colmater la brèche. Opérations suivantes terminées dès 17h05 (GMT +02:00) : mise en place d'une règle dans l'hôte virtuel de Caddy concerné pour interdir l'accès aux répertoires incriminés et changement des identifiants et mot-de-passes de l'utilisateur de la base de donnée.</p>
+		<h5>Réponse à Simon Rupf</h5>
+			<p>Envoi à 17h09 (GMT +02:00) de <a target="blank" href="https://paste.unixcorn.org/?f1ba8f04d2389f52#XhjPeDC+bkU3KUgvEcnomYQsuU7vSSP08AWo1M2jE4Q=">la réponse suivante</a> informant Simon de la résolution du problème, le remerciant pour l'information. Suivi d'<a target="blank" href="https://paste.unixcorn.org/?829f8b92ff1ee32f#AoatcjnBmeB96E2wGdPlUwjIYO2LqiyckVNFvyrkC7o=">une nouvelle réponse de sa part</a> reçue à 17h21 (GMT +02:00).</p>
+		<h5>Conclusion</h5>
+			<p>Les investigations menées à ce jour (analyse approfondie des <i>logs</i> du serveur MariaDB) montrent qu'il n'y a pas eu intrusion dans la base de donnée de notre instance PrivateBin. Les données de nos utilisateur-ice-s n'ont donc pas été compromises.</p>
+			<p>Pour réaliser à pénétrer notre base de donnée les attaquant-e-s auraient dû avoir accès à nos serveurs <i>php-fpm01</i> ou <i>gitea01</i> puis se connecter à notre serveur <i>mariadb01</i> avec un client MySQL à la base de donnée <code>upaste</code> avec les identifiants trouvés dans le fichier de configuration. L'opération précédemment citée est rendue impossible par l'utilisation d'une authentification forte avec <i>OpenSSH</i>, réservant l'accès aux serveur aux clés SSH autorisées. Un pare-feu efficace isolant notre machine <i>mariadb01</i> du réseau local où elle est connectée en autorisant uniqement les connexions vers les bases de données MySQL depuis l'adresse IP locale des serveurs nécessitants l'accès aux bases de données (deux à ce jour).</p> 
+			<p>Veuillez accepter nos excuses pour cette erreur regretable, nous nous efforçons de fournir des services Libres de qualité, nous devons donc nous assurer de la parfaite configuration de notre infrastructure matérielle et logicielle afin de permettre le respect de votre vie privée.</p>
+			<hr>
+			<p>Page modifiée la dernière fois le 1er octobre 2017.</p>
+	</section>
+</main>
