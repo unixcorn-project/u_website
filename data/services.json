@@ -34,7 +34,7 @@
     {
         "name": "Instance cloud",
         "icon": "cloud",
-        "description": "Synchronisez vos fichiers, calendriers, répertoires de contacts et listes de tâcges entre vos différents appareils et partagez les.",
+        "description": "Synchronisez vos fichiers, calendriers, répertoires de contacts et listes de tâches entre vos différents appareils et partagez les.",
         "more_info": "De base 1Go de stockage. Votre profil est exportable à tout moment. Les comptes inactifs sont supprimés au bout de 30 jours",
         "app": "Nextcloud",
         "url": "https://cloud.unixcorn.org",
