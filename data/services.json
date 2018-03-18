@@ -43,7 +43,7 @@
     {
         "name": "Téléchargement de vidéos",
         "icon": "youtube",
-        "description": "Téléchargez des vidéos (YouTube, Dalymotion, Vimeo...), convertissez les ou extrayez en le son.",
+        "description": "Téléchargez des vidéos (YouTube, Dalymotion, Vimeo…), convertissez les ou extrayez en le son.",
         "app": "Alltube",
         "url": "https://yt-dl.unixcorn.org",
         "requires_account": false
