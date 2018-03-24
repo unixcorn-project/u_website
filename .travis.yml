@@ -3,7 +3,5 @@ rvm:
   - 2.5.0
 cache: bundler
 script:
-  - git config --global user.name '${GIT_NAME}'
-  - git config --global user.email '${GIT_NAME}'
-  - git remote set-url origin https://<your-github-user>:${GH_TOKEN}@github.com/<your-github-user>/<your-github-repository>.git
+  - git remote set-url origin https://github.com/unixcorn-project/u_website.git
   - bundle exec middleman deploy
