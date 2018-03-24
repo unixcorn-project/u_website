@@ -22,7 +22,6 @@ activate :blog do |blog|
 end
 
 activate :directory_indexes
-activate :livereload
 
 activate :deploy do |deploy|
   deploy.deploy_method = :git
