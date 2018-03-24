@@ -1,0 +1,20 @@
+language: ruby
+sudo: false
+cache: bundler
+before_script:
+  - bundle update
+rvm:
+  - ruby-head
+  - 2.5.0
+os:
+  - linux
+matrix:
+  fast_finish: true
+  allow_failures:
+    - rvm: ruby-head
+env:
+  global:
+    - TEST=true
+script: bundle exec rake test
+notifications:
+  email: false
