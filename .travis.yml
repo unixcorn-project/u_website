@@ -3,5 +3,5 @@ rvm:
   - 2.5.0
 cache: bundler
 script:
-  - git remote set-url origin https://github.com/unixcorn-project/u_website.git
+  - git pull
   - bundle exec middleman deploy
