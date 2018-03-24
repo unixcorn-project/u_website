@@ -1,20 +1,9 @@
 language: ruby
-sudo: false
-cache: bundler
-before_script:
-  - bundle update
 rvm:
-  - ruby-head
   - 2.5.0
-os:
-  - linux
-matrix:
-  fast_finish: true
-  allow_failures:
-    - rvm: ruby-head
-env:
-  global:
-    - TEST=true
-script: bundle exec rake test
-notifications:
-  email: false
+cache: bundler
+script:
+  - git config --global user.name '${GIT_NAME}'
+  - git config --global user.email '${GIT_NAME}'
+  - git remote set-url origin https://<your-github-user>:${GH_TOKEN}@github.com/<your-github-user>/<your-github-repository>.git
+  - bundle exec middleman deploy
