@@ -30,7 +30,7 @@ header {
         align-items: center;
         max-width: 1280px;
         margin: auto;
-        padding: 30px 0px;
+        padding: 15px 0px;
 
         ul {
             flex: 1;
@@ -74,7 +74,7 @@ header nav ul li a, header nav ul li a:visited {
 section {
     max-width: 1280px;
     margin: auto;
-    padding: 75px 0px;
+    padding: 45px 0px;
 }
 
 .underline::after {
@@ -97,6 +97,7 @@ section {
     img {
         max-width: 100%;
         height: auto;
+        max-height: 150px;
     }
 }
 
@@ -110,7 +111,7 @@ section {
 
 .service {
     width: 25%;
-    padding: 30px;
+    padding: 15px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
