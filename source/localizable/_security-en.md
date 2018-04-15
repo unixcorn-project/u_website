@@ -1,36 +1,35 @@
-### 01/10/2017 - Faille de sécurité « Partage de texte » (PrivateBin)
+### 01/10/2017 - Security Breach « Text sharing » (PrivateBin)
 
+Sunday, October 1st 2017, at 4:58 PM (GMT +02:00), we have been notified on our email adress that an important security breach was discovered on our public PrivateBin instance. Here is the detail of this discussion, of the possible impact on our users and of the actions taken after because of this information.
 
-Dimanche 1er octobre 2017 à 16h58 (GMT +02:00) nous avons été notifié sur notre adresse e-mail de contact de la découverte d'une importante faille de sécurité sur notre instance publique de PrivateBin. Voici le détail de ce signalement, de l'impact possible pour nos utilisateur-ice-s et des opérations réalisées suite à cette information.
+#### An human error during the migration of the web server of our php-fpm01 server
 
-#### Erreur humaine lors de la migration du serveur web de notre serveur php-fpm01
+During the migration from Nginx to Caddy, Thursday September 28th 2017 at 8:30 PM (GMT +02:00), a mistake in the configuration of the virtual host to configure PrivateBin was made.
 
-Lors de la migration de Nginx vers Caddy, jeudi 28 septembre 2017 à 20h30 (GMT +02:00), mauvaise configuration de l'hôte virtuel permettant la configuration de PrivateBin au niveau de notre serveur web Caddy.
+All of the normally private directories (cfg, doc, data, lib, tpl, tst and vendor) have been exposed to the Internet. The data is stored in our database, and the `/cfg/conf.ini` was containing authentication information to this database.
 
-L'ensemble des répertoires normalement privés de PrivateBin (cfg, doc, data, lib, tpl, tst et vendor) se retrouvent exposés sur internet. Les données étant stockées en base de donnée, le plus problématique étant donc le fichier de configuration `/cfg/conf.ini` contenant les accès à cette dernière.
+It was a MySQL database hosted on a server dedicated to MariaDB, which can be reached from a dedicate user, who only had the rigths to access the `upstate` database. This server, reachable from the Internet, is accessible from the local network of our hosting provider DigitalOcean in its data center at Frankfort (Germany).
 
-Base de donnée MySQL hébergée sur un serveur dédié à MariaDB, joignable depuis un utilisateur dédié avec les droits d'accès uniquement à la base de donnée `upaste`. Ce serveur non joignable depuis l'internet reste accessible depuis le réseau local de notre hébergeur DigitalOcean dans son centre de données à Francfort (Allemagne).
+#### Discovering the security breach
 
-#### Découverte de la faille de sécurité
+Simon Rupf, PrivateBin maintainer, informed us by email at 4:58 PM (GMT +02:00) that he discovered this security breach thanks to a tier (still anonymous today). Here is the email we received, [on our PrivateBin instance](https://paste.unixcorn.org/?9ea5f2974461a849#jCvPhx1lPvkRLpm0qe4hfF3ymK08zSKiIinm9sJN6rk=).
 
-Simon Rupf, mainteneur de PrivateBin, nous informe par e-mail à 16h58 (GMT +02:00) de la découverte de cette faille de sécurité par un tiers (non connu à ce jour). Voici l'e-mail reçu, [le lire sur notre instance PrivateBin](https://paste.unixcorn.org/?9ea5f2974461a849#jCvPhx1lPvkRLpm0qe4hfF3ymK08zSKiIinm9sJN6rk=).
+#### Fixing the issue
 
-#### Application de correctifs
+We immediatly applied the necessary patches. The issue was fixed at 5:05 PM (GMT +02:00), by adding a rule in the Caddy virtual host to forbid the access to the concerned directories, and by changing the authentication information of the database.
 
-Dès réception de l'e-mail de Simon, applications des correctifs appropriés pour colmater la brèche. Opérations suivantes terminées dès 17h05 (GMT +02:00) : mise en place d'une règle dans l'hôte virtuel de Caddy concerné pour interdir l'accès aux répertoires incriminés et changement des identifiants et mot-de-passes de l'utilisateur de la base de donnée.
+#### Response to Simon Rupf
 
-#### Réponse à Simon Rupf
-
-Envoi à 17h09 (GMT +02:00) de [la réponse suivante](https://paste.unixcorn.org/?f1ba8f04d2389f52#XhjPeDC+bkU3KUgvEcnomYQsuU7vSSP08AWo1M2jE4Q=) informant Simon de la résolution du problème, le remerciant pour l'information. Suivi d'[une nouvelle réponse de sa part](https://paste.unixcorn.org/?829f8b92ff1ee32f#AoatcjnBmeB96E2wGdPlUwjIYO2LqiyckVNFvyrkC7o=) reçue à 17h21 (GMT +02:00).
+We sent at 5:09 PM (GMT +02:00) [the following email](https://paste.unixcorn.org/?f1ba8f04d2389f52#XhjPeDC+bkU3KUgvEcnomYQsuU7vSSP08AWo1M2jE4Q=) saying to Simon that the problem was solved, and thanking him for informing us. We then received [another response from him](https://paste.unixcorn.org/?829f8b92ff1ee32f#AoatcjnBmeB96E2wGdPlUwjIYO2LqiyckVNFvyrkC7o=) at 5:21 (GMT +02:00).
 
 #### Conclusion
 
-Les investigations menées à ce jour (analyse approfondie des *logs* du serveur MariaDB) montrent qu'il n'y a pas eu intrusion dans la base de donnée de notre instance PrivateBin. Les données de nos utilisateur-ice-s n'ont donc pas été compromises.
+The investigations we did so far (deep *log* analysis of the MariaDB server) show that nobody tried to connect to the database of our PrivateBin instance. The data of our users have not been compromised.
 
-Pour réaliser à pénétrer notre base de donnée les attaquant-e-s auraient dû avoir accès à nos serveurs *php-fpm01* ou *gitea01* puis se connecter à notre serveur *mariadb01* avec un client MySQL à la base de donnée `upaste` avec les identifiants trouvés dans le fichier de configuration. L'opération précédemment citée est rendue impossible par l'utilisation d'une authentification forte avec *OpenSSH*, réservant l'accès aux serveur aux clés SSH autorisées. Un pare-feu efficace isolant notre machine *mariadb01* du réseau local où elle est connectée en autorisant uniqement les connexions vers les bases de données MySQL depuis l'adresse IP locale des serveurs nécessitants l'accès aux bases de données (deux à ce jour). 
+To log in to our database, the attackers would have needed access to our *php-fpm01* or *gitea01* servers, then connect to our *mariadb01* server with a MySQL client, log in to the `upstate` database with the username and password found in the configuration file. But this operation is impossible, thanks to the use of a string authentication with *OpenSSH*, restricting access to the known SSH keys. An efficient firewall isolating our *mariadb01* server of the local network where it was connected was setup, only allowing connections from the local IP address of the servers needing access to the database (two of them).
 
-Veuillez accepter nos excuses pour cette erreur regretable, nous nous efforçons de fournir des services Libres de qualité, nous devons donc nous assurer de la parfaite configuration de notre infrastructure matérielle et logicielle afin de permettre le respect de votre vie privée.
+Please accept our excuses for this regretable error. We make our best to provide quality libre services, and that's why we must make sure our hardware and software infrastructures are perfectly configured, to fully respect your privacy.
 
 ---
 
-Page modifiée la dernière fois le 1er octobre 2017.
+Last edition on October 1st 2017.
