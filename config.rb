@@ -25,7 +25,7 @@ activate :i18n, mount_at_root: :fr, langs: [:fr, :en]
 set :markdown_engine, :kramdown
 
 activate :blog do |blog|
-  blog.sources = "blog/{lang}/{year}-{month}-{day}-{title}.html"
+  blog.sources = "localizable/blog/{lang}/{year}-{month}-{day}-{title}.html"
   blog.permalink = "blog/{year}/{title}.html"
 
   blog.layout = "blog_layout"
