@@ -92,7 +92,7 @@ en:
         description: "Download videos (YouTube, DailyMotion, Vimeo…), convert them or extract soundtracks."
       forum:
         name: Forum de discussion
-        description: "A disccusion forum to fix eventual issues, work on future projects, or simply make our community live."
+        description: "A discussion forum to fix eventual issues, work on future projects, or simply make our community live."
       chat:
         name: Salons de discussion
         description: "Instant messenger service, with which you can chat in public or private rooms, and setup your own group."
