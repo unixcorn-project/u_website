@@ -1,26 +1,26 @@
-### 1. Instance « cloud », service d'hébergement de données
+### 1. « Cloud » instance, data hosting service
 
-Le service d'hébergement de données, dit « cloud », est une instance Nextcloud standard où seul l'affichage (le thème) est personnalisé. Le service inclu l'hébergement, le partage, l'organisation de fichiers. L'application intégrée « Annonces » est utilisé par l'équipe d'administration pour faire passer des messages aux utilisateur-ice-s en prévision d'une action de maintenance (telle qu'une mise à jour par exemple).
+The data hosting service, called « cloud », is a standard NextCloud instance, where only the theme is customized. The service includes the hosting, sharing, and organization of files. The integrated "Announcements" application is used by the administration team to send messages to the users before any maintenance action (an update for instance).
 
-Par votre inscription au service vous acceptez tacitement les règles d'utilisation suivantes :
+By creating an account, you accept the following terms:
 
-- Vous vous engagez à ne pas téléverser de contenu délicteux et à ne pas utiliser le service à des fins frauduleuses.
-- Votre compte est supprimé au bout d'un mois complet d'inactivité (non connexion au site internet, synchronisation depuis n'importe quel logiciel client), il sera alors impossible de récupérer vos données.
-- Vous êtes responsables de vos données, actuellement elles ne sont pas stockées sur un volume chiffré. Cela veut notamment dire que nos équipes d'administration peuvent y avoir accès.
-- Vous autorisez l'équipe d'administration à vous contacter par e-mail (à l'adresse utilisée pour l'inscription), en cas de problème technique mais aussi simplement pour faire passer des informations en rapport direct avec le service utilisé.
+- You will never upload illegal content nor use the service to achieve illegal goals.
+- You account is deleted after one month of inactivity (no connection to the website, nor sync from any client software), and it will then be impossible to get back your data.
+- Your are responsible of your data, currently they are not stored on an encrypted drive. It means that our administration team may access it.
+- You allow the administration team to contact you by email (with the email adress used to register), if there is any technical issue but also if they need to give you information directly related to the services you are using.
 
-### 2. Forum de discussion, Flarum
+### 2. Discussion forum, Flarum
 
-Le forum de discussion mis à disposition est une instance de Flarum agrémentée de quelques extensions et d'une traduction française du logiciel. Elle a vocation à permettre la communication entre les membres utilisateur-ice-s et administrateur-ice-s du projet. Bien évidemment les règles habituelles de bienséances sont à respecter, aucune parole ou comportement sexiste, raciste, xénophobe, homophobe ou encore transphobe ne sera toléré. De même nous refusons catégoriquement tout agisme ou classisme, comme tous les autres espaces du projet nous voulons y être porteur-euse-s de respect de l'autre et de solidarité.
+The discussion forum provided is a Flarum instance with a few extensions and a french translation of the software. It aims to make communication between users and project administrators easier. Obviously, the usual mutual respect rules are to be respected, no sexist, racist, homophobic, transphobic, etc behavior will be tolerated. We also forbid any kind of agism or classism, like in all other spaces of the project we want to promote respect of each other and solidarity.
 
-En cas de problème la personne contrevenant à ces règles pourra se voir retirer ses accès à l'ensemble des services du projet, et ce sans préavis quelconque.
+Anybody who will not follow these rules will have its access to all the project's service removed, without any previous notification.
 
-### 3. Réseau social décentralisé, Mastodon
+### 3. Décentralized social network, Mastodon
 
-Le service Mastodon est une alternative viable à Twitter. Vous y créez votre compte et vous laissez guider. Ce service dispose de ses propres règles d'utilisation, vous les trouverez à l'adresse suivante : https://unixcorn.xyz/about/more
+The Mastodon service is a viable alternative to Twitter. You create your account, and let yourself be guided. This service has its own rules, that you can read at the following address: https://unixcorn.xyz/about/more
 
-### 4. Discussion instantanée, Mattermost
+### 4. Instant messenging, Mattermost
 
-Nous mettons à disposition un serveur de discussion instantanée, une fois inscrit-e vous pouvez rejoindre le groupe dédié au projet et ainsi discuter librement avec les membres d'Unixcorn. Vous avez aussi la possibilité de créer votre propre équipe et d'administrer cette dernière par vous-même. Les règles d'usage sont identiques à celles du forum mentionnées plus haut, elles sont aussi valable au sein de votre équipe.
+We provide an instant messenging server. Once you regsitered, you can join the group dedicated to the project and freely chat with Unixcorn's members. You also have the ability to create your own team and to administrate it by yourself. The rules are similar to the forum's ones mentionned above, and they are also to be followed inside of your team.
 
-Page modifiée la dernière fois le 3 aout 2017.
+Last modification on August 3rd 2017.
