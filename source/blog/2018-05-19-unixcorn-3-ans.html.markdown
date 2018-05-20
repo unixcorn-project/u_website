@@ -20,6 +20,6 @@ Nous choisissons de partir sur le modèle associatif mais avons fait le souhait 
 Pour l'avenir nous aimerions nous rapprocher de projets existants, d'aider à la promotion de ceux-ci. Notre but n'est pas de réinventer la roue, ou de "concurrencer" des projets existants. Dans ce sens nous pensons particulièrement à Tails (nous fournissons d'ores et déjà un miroir HTTPS), Yunohost...
 Des discussions ont aussi eu lieu concernant le fait de proposer un service d'e-mail, un certain nombre de questions sont remontées à ce sujet : chiffrement à quel niveau, quel niveau de confidentialité ? Quelle politique en cas de problème ? Quel espace de stockage ?
 
-Retrouvez le pad ayant servi à la prise de note lors de notre rencontre : https://pad.unixcorn.org/GYTgzAhgJlYgtAVjFBAWADGgpvARsNsPBAQBzADGwaaIoQA=
+En attendant, retrouvez [le pad ayant servi à la prise de note](https://pad.unixcorn.org/GYTgzAhgJlYgtAVjFBAWADGgpvARsNsPBAQBzADGwaaIoQA=) lors de notre rencontre.
 
 À plus !
