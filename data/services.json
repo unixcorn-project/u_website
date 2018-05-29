@@ -10,7 +10,7 @@
     {
         "name": "Échange de fichiers",
         "icon": "cloud-upload",
-        "description": "Partagez vos fichiers divers (archives, etc). Vous pouvez téléverser jusqu'à 8 Go, les protéger avec un mot-de-passe et les garder en ligne jusqu'à un mois.",
+        "description": "Partagez vos fichiers divers (archives, etc). Vous pouvez téléverser jusqu'à 3 Go, les protéger avec un mot-de-passe et les garder en ligne jusqu'à une semaine .",
         "app": "Jirafeau",
         "url": "https://drop.unixcorn.org",
         "requires_account": false
