@@ -115,6 +115,12 @@ section {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    
+    img {
+        width: 35%;
+        display: block;
+        margin: 0 auto;
+    }
 
     h2, i, .powered-by, p {
         display: block;
