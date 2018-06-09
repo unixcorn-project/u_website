@@ -40,19 +40,19 @@ en:
   doc_link: documentation
   liberapay_link: Liberapay
   infrastructure: Infrastructure
-  proxmox_description: "
-    « Proxmox Virtual Environment » is a complete virtualization solution,
-    based on KVM and LXC containers. Our infrastructure is based on these open-source technologies,
-    Proxmox contributes twice by gracefully providing us « Enterprise » licenses."
-  debian_description: "
-    « Debian » GNU/Linux is a libre universal operating system.
+  lxd_description: "
+    « LXD » is a virtualization tool based on containers.
+    Our infrastructure uses its libre and modern technologies, which allow us to best use our ressources."
+  ubuntu_description: "
+    « Ubuntu » is a GNU/Linux operating system supported by
+    <a href=\"https://www.canonical.com/\" target=\"_blank\">Canonical</a>.
     It is used at every level in our infrastructure,
     from our proxy to our databases."
   caddy_description: "
     « Caddy » is a HTTP/2 server, with an automatic integration of TLS.
     All of our services and websites are served by our Caddy front-ends and
     Let's Encrypt certificates."
-  legals_edit_date: Last edition on August, 3rd 2017.
+  legals_edit_date: Last edition on May, 19th 2018.
   rules_title: Terms of Service
   security: Important Announces Related to Security
   our_services: Our Services
@@ -77,7 +77,7 @@ en:
         description: "Share text securely. Ideal for configurations, code, logs or any other document that is not public."
       drop:
         name: File share
-        description: "Share various files (archives, etc). You can upload up to 8 GB, protect them with a password and keep them online for one month."
+        description: "Share various files (archives, etc). You can upload up to 3 GB, protect them with a password and keep them online for one week."
       pads:
         name: Markdown Pads
         description: "Write with other people in real time Markdown documents. You can also create an account to save your documents."

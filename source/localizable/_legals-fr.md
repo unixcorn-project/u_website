@@ -22,7 +22,7 @@ Elles ne sont pas cédées à des tiers ni utilisées à d'autres fins.
 
 Conformément aux dispositions de l’article 34 de la loi n° 48-87 du 6 janvier 1978,
 l’utilisateur dispose d’un droit de modification des données nominatives collectées le concernant.
-Pour ce faire, l’utilisateur envoie à Unixcorn un courrier électronique à l'adresse de contact suivante : root@unixcorn.org
+Pour ce faire, l’utilisateur envoie à Unixcorn un courrier électronique à l'adresse de contact suivante : root @ unixcorn . org
 en indiquant son nom ou sa raison sociale, ses coordonnées physiques et/ou électroniques, ainsi que le cas échéant
 la référence dont il disposerait en tant qu’utilisateur du site Unixcorn.
 
@@ -52,7 +52,7 @@ injurieux, diffamant, ou pornographique, quel que soit le support utilisé (text
 
 ##### Limitations contractuelles sur les données techniques
 
-Unixcorn ne pourra être tenue responsable de dommages matériels liés à l’utilisation du site.
+Unixcorn ne pourra être tenue responsable de dommages matériels liés à l’utilisation du site et des services proposés.
 De plus, l’utilisateur du site s’engage à accéder au site en utilisant un matériel récent,
 ne contenant pas de virus et avec un navigateur de dernière génération mis-à-jour.
 

@@ -2,7 +2,7 @@
 
 Le service d'hébergement de données, dit « cloud », est une instance Nextcloud standard où seul l'affichage (le thème) est personnalisé. Le service inclu l'hébergement, le partage, l'organisation de fichiers. L'application intégrée « Annonces » est utilisé par l'équipe d'administration pour faire passer des messages aux utilisateur-ice-s en prévision d'une action de maintenance (telle qu'une mise à jour par exemple).
 
-Par votre inscription au service vous acceptez tacitement les règles d'utilisation suivantes :
+#### Par votre inscription au service vous acceptez tacitement les règles d'utilisation suivantes :
 
 - Vous vous engagez à ne pas téléverser de contenu délicteux et à ne pas utiliser le service à des fins frauduleuses.
 - Votre compte est supprimé au bout d'un mois complet d'inactivité (non connexion au site internet, synchronisation depuis n'importe quel logiciel client), il sera alors impossible de récupérer vos données.

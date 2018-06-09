@@ -23,7 +23,7 @@ They are not given to any third party nor used for any other aim.
 
 As required by the 34th article of the n° 48-87 law of January 6th 1978,
 the user has the right to edit the collected data concerning him.
-To do so, the user send to Unixcorn an email to the following contact address: root@unixcorn.org
+To do so, the user send to Unixcorn an email to the following contact address: root @ unixcorn . org
 specifying his name or its company name, its physical and/or electronical contact information, and if possible
 the reference he would have as an user of the Unixcorn website.
 
@@ -51,7 +51,7 @@ if posting racist, insulting, defamatory, or pornographic, whatever the format i
 
 #### Contractual limitations on the technical data
 
-Unixcorn can't be held for responsible of the physical damages related to the use of the website.
+Unixcorn can't be held for responsible of the physical damages related to the use of the website and of the provided services.
 Moreover, the user of the website is commited to browse the website using recent hardware,
 without any viruses and with a last generation and up-to-date web browser.
 

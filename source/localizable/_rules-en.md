@@ -2,7 +2,7 @@
 
 The data hosting service, called « cloud », is a standard NextCloud instance, where only the theme is customized. The service includes the hosting, sharing, and organization of files. The integrated "Announcements" application is used by the administration team to send messages to the users before any maintenance action (an update for instance).
 
-By creating an account, you accept the following terms:
+#### By creating an account, you accept the following terms:
 
 - You will never upload illegal content nor use the service to achieve illegal goals.
 - You account is deleted after one month of inactivity (no connection to the website, nor sync from any client software), and it will then be impossible to get back your data.

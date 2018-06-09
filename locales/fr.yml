@@ -41,20 +41,19 @@ fr:
   doc_link: documentation
   liberapay_link: Liberapay
   infrastructure: Infrastructure
-  proxmox_description: "
-    « Proxmox Virtual Environment » est une solution complète de virtualisation,
-    basée sur KVM et les conteneurs LXC. Notre infrastructure repose sur ces technologies
-    open-source, Proxmox contribue doublement en nous fournissant gracieusement des
-    licences d'utilisation « Enterprise »."
-  debian_description: "
-    « Debian » GNU/Linux est un système d'exploitation libre dit universel.
-    Il est utilisé à tous les niveaux dans notre infrastructure,
+  lxd_description: "
+    « LXD » est une solution de virtualisation à base de cloisonnement.
+    Notre infrastructure repose sur ces technologies libres et modernes qui nous permettent
+    d'optimiser au mieux les ressources de nos machines."
+  ubuntu_description: "
+    « Ubuntu » est un système d'exploitation GNU/Linux supporté par
+    <a href=\"https://www.canonical.com/\" target=\"_blank\">Canonical</a>. Il est utilisé à tous les niveaux dans notre infrastructure,
     que ce soit en entrée sur nos proxy ou en back-end avec nos bases de données."
   caddy_description: "
     « Caddy » est un serveur web HTTP/2 avec intégration automatique du protocole de chiffrement TLS.
     L'ensemble de nos services et sites internet sont servis par nos front-end Caddy
     et les certificats du projet Let's Encrypt."
-  legals_edit_date: Page modifiée pour la dernière fois le 3 aout 2017.
+  legals_edit_date: Page modifiée pour la dernière fois le 19 mai 2018.
   rules_title: CGU &mdash; Conditions d'utilisation des services
   security: Annonces importantes liées à la sécurité
   our_services: Nos services
@@ -79,7 +78,7 @@ fr:
         description: "Partagez du texte de façon sécurisée. Idéal pour les configurations, code, logs, ou tout autre document qui n'est pas de nature publique."
       drop:
         name: Échange de fichiers
-        description: "Partagez vos fichiers divers (archives, etc). Vous pouvez téléverser jusqu'à 8 Go, les protéger avec un mot-de-passe et les garder en ligne jusqu'à un mois."
+        descritpion: "Partagez vos fichiers divers (archives, etc). Vous pouvez téléverser jusqu'à 3 Go, les protéger avec un mot-de-passe et les garder en ligne jusqu'à une semaine."
       pads:
         name: Pads Markdown
         description: "Rédigez collaborativement et en temps réel avec vos équipes des documents Markdown. Vous pouvez créer un compte pour sauvegarder vos documents."
