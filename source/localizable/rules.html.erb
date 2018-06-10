@@ -1,0 +1,12 @@
+---
+title: Rules
+---
+
+<main>
+	<section class="presentation">
+		<h1><%= t 'rules_title' %></h1>
+	</section>
+	<section>
+		<%= partial('rules-' + I18n.locale.to_s) %>
+	</section>
+</main>

@@ -4,7 +4,11 @@
   <section class="presentation">
     <h1><%= current_article.title %></h1>   
     <p>
-        Par <%= author.display_name || author.name %><% if current_article.data['category'] %>, dans <%= current_article.data['category'] %><% end %>
+        <% if current_article.data['category'] %>
+            <%= t('blog_info_full', author: author.display_name || author.name, category: current_article.data['category']) %>
+        <% else %>
+            <%= t('blog_info', author: author.display_name || author.name) %>
+        <% end %>
     </p> 
   </section>
   <section class="blog">
@@ -19,15 +23,16 @@
         </div>
         <div>
             <a href="web+mastodon://share?text=<%= current_article.title %> - Unixcorn%0D%0A%0D%0Ahttps://unixcorn.org<%= current_article.url %>">
-                <i class="fa fa-share"></i> Partager sur Mastodon
+                <i class="fa fa-share"></i>
+                <%= t 'mastodon_share' %>
             </a>
         </div>
     </aside>
     <div class="author">
         <img src="/images/avatars/<%= author.name %>.png" />
         <div>
-            <h2>Écrit par <%= author.display_name || author.name %></h2>
-            <p class="date">Le <%= current_article.date.strftime '%d/%m/%y' %></p>
+            <h2><%= t('written_by', author: author.display_name || author.name) %></h2>
+            <p class="date"><%= t('article_date', date: current_article.date.strftime '%d/%m/%y') %></p>
         </div>
     </div>
   </section>

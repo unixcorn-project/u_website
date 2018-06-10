@@ -1,66 +1,58 @@
 [
     {
-        "name": "Textes et snippets",
+        "id": "privatebin",
         "icon": "clipboard",
-        "description": "Partagez du texte de façon sécurisée. Idéal pour les configurations, code, logs, ou tout autre document qui n'est pas de nature publique.",
         "app": "PrivateBin",
         "url": "https://paste.unixcorn.org",
         "requires_account": false
     },
     {
-        "name": "Échange de fichiers",
+        "id": "drop",
         "icon": "cloud-upload",
-        "description": "Partagez vos fichiers divers (archives, etc). Vous pouvez téléverser jusqu'à 3 Go, les protéger avec un mot-de-passe et les garder en ligne jusqu'à une semaine .",
         "app": "Jirafeau",
         "url": "https://drop.unixcorn.org",
         "requires_account": false
     },
     {
-        "name": "Pads Markdown",
+        "id": "pads",
         "icon": "edit",
-        "description": "Rédigez collaborativement et en temps réel avec vos équipes des documents Markdown. Vous pouvez créer un compte pour sauvegarder vos documents.",
         "app": "HackMD",
         "url": "https://pad.unixcorn.org",
         "requires_account": false
     },
     {
-        "name": "Réseau social",
+        "id": "mastodon",
         "icon": "share-square",
-        "description": "Notre instance du réseau social décentralisé Mastodon. Nous y pratiquons une modération agressive pour garder notre espace « safe » pour tou⋅te⋅s.</p>",
         "app": "Mastodon",
         "url": "https://unixcorn.xyz",
         "requires_account": true
     },
     {
-        "name": "Instance cloud",
+        "id": "cloud",
         "icon": "cloud",
-        "description": "Synchronisez vos fichiers, calendriers, répertoires de contacts et listes de tâches entre vos différents appareils et partagez les.",
         "more_info": "De base 1Go de stockage. Votre profil est exportable à tout moment. Les comptes inactifs sont supprimés au bout de 30 jours",
         "app": "Nextcloud",
         "url": "https://cloud.unixcorn.org",
         "requires_account": true
     },
     {
-        "name": "Téléchargement de vidéos",
+        "id": "ytdl",
         "icon": "youtube",
-        "description": "Téléchargez des vidéos (YouTube, DailyMotion, Vimeo…), convertissez les ou extrayez en le son.",
         "app": "Alltube",
         "url": "https://yt-dl.unixcorn.org",
         "requires_account": false
     },
     {
-        "name": "Forum de discussion",
+        "id": "forum",
         "icon": "comments-o",
-        "description": "Un forum de discussion pour régler les éventuels soucis, travailler sur les projets futurs et tout simplement faire vivre notre communauté.",
         "app": "Flarum",
         "url": "https://forum.unixcorn.org",
         "requires_account": true,
         "hide_on_homepage": true
     },
     {
-        "name": "Salons de discussion",
+        "id": "chat",
         "icon": "commenting",
-        "description": "Service de messagerie instantanée, grâce auquel vous pouvez discuter dans les salons publics, privés et mettre en place votre propre groupe.",
         "app": "Mattermost",
         "url": "https://chat.unixcorn.org",
         "requires_account": true,

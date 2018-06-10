@@ -1,0 +1,63 @@
+---
+title: Home
+---
+
+<main>
+    <section class="presentation">
+		<img src="/images/wide_banner.png">
+		<p><%= t 'description' %></p>
+		<p><%= t 'location' %> 🇩🇪</p>
+	</section>
+	<section>
+		<h2 class="underline"><%= t 'services' %></h2>
+		<ul class="services">
+			<% data.services.each do |s| %>
+				<% if !s.hide_on_homepage %>
+					<li class="service">
+						<h2><%= t('data.services.' + s.id + '.name') %></h2>
+						<i class="fa fa-<%= s.icon %> fa-2x"></i>
+						<p><%= t('data.services.' + s.id + '.description') %></p>
+						<p class="powered-by"><%= (t 'powered_by') + ' ' + s.app %></p>
+						<a class="button" href="<%= s.url %>"><%= t 'launch' %></a>
+					</li>
+				<% end %>
+			<% end %>
+		</ul>
+	</section>
+	<section>
+		<h3><%= t 'want_to_know_more' %></h3>
+
+		<div class="flex">
+			<a class="button" href="/services"><%= t 'service_details' %></a>
+			<a class="button" href="https://status.unixcorn.org"><%= t 'service_status' %></a>
+			<a class="button" href="/infrastructure"><%= t 'our_infrastructure' %></a>
+		</div>
+	</section>
+	<section class="flex">
+		<article class="card">
+			<h2 class="underline"><%= t 'support' %></h2>
+			<p>
+				<%=
+					t(
+						'support_description',
+						chat_link: link_to(t('chat_link'), 'https://chat.unixcorn.org'),
+						forum_link: link_to(t('forum_link'), 'https://forum.unixcorn.org')
+					)
+				%>
+			</ul>
+		</article>
+		<article class="card">
+			<h2 class="underline"><%= t 'contribute' %></h2>
+			<p>
+				<%=
+					t(
+						'contribute_description',
+						doc_link: link_to(t('doc_link'), 'https://doc.unixcorn.org'),
+						liberapay_link: link_to(t('liberapay_link'), 'https://liberapay.com/unixcorn-project/donate')
+					)
+				%>
+			</p>
+			</ul>
+		</article>
+	</section>
+</main>

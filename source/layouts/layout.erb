@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title><%= (current_page.data.title || 'Unixcorn') + ' - Unixcorn' %></title>
+    <title><%= page_title %></title>
     <meta charset="utf8">
     <meta name="description" content="<%= config[:description] %>">
 		<meta name="author" content="Unixcorn">
@@ -67,14 +67,14 @@
   <body>
     <header>
       <nav>
-				<a class="name" href="/">Unixcorn</a>
+				<a class="name" href="/"><%= t 'unixcorn' %></a>
 				<ul>
-					<li><a href="/">Accueil</a></li>
-					<li><a href="/blog">Blog</a></li>
-					<li><a href="https://chat.unixcorn.org">Chat</a></li>
-					<li><a href="/services">Services</a></li>
-					<li><a href="https://doc.unixcorn.org">Wiki</a></li>
-					<li><a href="/rules">CGU</a></li>
+					<li><a href="/"><%= t 'home' %></a></li>
+					<li><a href="/blog"><%= t 'blog' %></a></li>
+					<li><a href="https://chat.unixcorn.org"><%= t 'chat' %></a></li>
+					<li><a href="/services"><%= t 'services' %></a></li>
+					<li><a href="https://doc.unixcorn.org"><%= t 'wiki' %></a></li>
+					<li><a href="/rules"><%= t 'rules' %></a></li>
 				</ul>
       </nav>
     </header>
@@ -85,10 +85,10 @@
 		<a rel="license" href="https://creativecommons.org/publicdomain/zero/1.0/">
 			<img alt="Creative Commons License" style="border-width:0" src="/images/external/CC-Zero-badge.png" />
 		</a>
-		<p>&copy; 2015-2018 <a href="https://unixcorn.org">Unixcorn Project</a></p>
-		<a href="/rules">CGU</a>
+		<p>&copy; 2015-2018 <a href="https://unixcorn.org"><%= t 'unixcorn_project' %></a></p>
+		<a href="/rules"><%= t 'rules' %></a>
 		&mdash;
-		<a href="/legals">Mentions légales</a>
+		<a href="/legals"><%= t 'legals' %></a>
 	</footer>
   </body>
 </html>
