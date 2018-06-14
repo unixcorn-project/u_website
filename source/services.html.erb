@@ -1,17 +1,17 @@
 ---
-title: Services
+title: Nos services
 ---
 
 <main>
 	<section class="presentation">
-		<h1><%= t 'our_services' %></h1>
-		<p><%= t 'service_limit' %></p>
-		<a href="https://liberapay.com/unixcorn-project/donate"><h4><%= t 'donate' %></h4></a>
-		<h5><%= t 'donation_status' %></h5>
+		<h1>Nos services</h1>
+		<p>Afin de ne pas dégrader l'accès des autres utilisateur⋅ice⋅s, certains services sont limités dans leur usage.</p>
+		<a href="https://liberapay.com/unixcorn-project/donate"><h4>Faire un don régulier</h4></a>
+		<h5>Dons: 32€/mois. Coûts: 100€/mois.</h5>
 	</section>
 
 	<section>
-		<h2 class="underline"><%= t 'no_registration_services' %></h2>
+		<h2 class="underline">Services sans inscription</h2>
 		<ul class="services">
 			<% data.services.each do |s| %>
 				<% if !s.requires_account %>
@@ -19,8 +19,8 @@ title: Services
 						<h2><%= s.name %></h2>
 						<i class="fa fa-<%= s.icon %> fa-2x"></i>
 						<p><%= s.description %></p>
-						<p class="powered-by"><%= t 'powered_by' %><%= s.app %></p>
-						<a class="button" href="<%= s.url %>"><%= t 'launch' %></a>
+						<p class="powered-by">Propulsé par <%= s.app %></p>
+						<a class="button" href="<%= s.url %>">Ouvrir</a>
 					</li>
 				<% end %>
 			<% end %>
@@ -28,7 +28,7 @@ title: Services
 	</section>
 
 	<section>
-		<h2 class="underline"><%= t 'registration_services' %></h2>
+		<h2 class="underline">Inscription publique requise</h2>
 		<ul class="services">
 			<% data.services.each do |s| %>
 				<% if s.requires_account %>
@@ -37,8 +37,8 @@ title: Services
 						<i class="fa fa-<%= s.icon %> fa-2x"></i>
 						<p><%= s.description %></p>
 						<p><%= s.more_info %></p>						
-						<p class="powered-by"><%= t 'powered_by' %><%= s.app %></p>
-						<a class="button" href="<%= s.url %>"><%= t 'launch' %></a>
+						<p class="powered-by">Propulsé par <%= s.app %></p>
+						<a class="button" href="<%= s.url %>">Ouvrir</a>
 					</li>
 				<% end %>
 			<% end %>

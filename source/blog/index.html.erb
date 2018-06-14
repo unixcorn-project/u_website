@@ -4,26 +4,26 @@ per_page: 5
 ---
 <main>
     <section class="presentation">
-        <h1><%= t 'blog' %></h1>
+        <h1>Blog</h1>
     </section>
     <section>
         <% if paginate && num_pages > 1 %>
-        <p><%= t('page_num', page_number: page_number, num_pages: num_pages) %></p>
+        <p>Page <%= page_number %> sur <%= num_pages %></p>
 
         <% if prev_page %>
-            <p><%= link_to t('prev_page'), prev_page %></p>
+            <p><%= link_to 'Page précédente', prev_page %></p>
         <% end %>
         <% end %>
 
         <% page_articles.each_with_index do |article, i| %>
             <h2><%= link_to article.title, article %></h2>
-            <p><% t('article_date', date: article.date.strftime('%d/%m/%y')) %></p>
+            <p>Le <%= article.date.strftime '%d/%m/%y' %></p>
             <%= article.summary(250, '…') %>
         <% end %>
 
         <% if paginate %>
         <% if next_page %>
-            <p><%= link_to t('next_page'), next_page %></p>
+            <p><%= link_to 'Page suivante', next_page %></p>
         <% end %>
         <% end %>
     </section>

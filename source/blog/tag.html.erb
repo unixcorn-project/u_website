@@ -5,14 +5,14 @@ layout: 'layout'
 ---
 <main>
     <section class="presentation">
-        <h1><%= t 'tag_title', tag: tagname %></h1>
+        <h1>Articles taggués #<%= tagname %></h1>
     </section>
     <section>
-                <% if paginate && num_pages > 1 %>
-        <p><%= t('page_num', page_number: page_number, num_pages: num_pages) %></p>
+        <% if paginate && num_pages > 1 %>
+        <p>Page <%= page_number %> sur <%= num_pages %></p>
 
         <% if prev_page %>
-            <p><%= link_to t('prev_page'), prev_page %></p>
+            <p><%= link_to 'Page précédente', prev_page %></p>
         <% end %>
         <% end %>
 
@@ -24,7 +24,7 @@ layout: 'layout'
 
         <% if paginate %>
         <% if next_page %>
-            <p><%= link_to t('next_page'), next_page %></p>
+            <p><%= link_to 'Page suivante', next_page %></p>
         <% end %>
         <% end %>
     </section>

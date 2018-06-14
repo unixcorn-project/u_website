@@ -1,0 +1,56 @@
+---
+title: Accueil
+---
+
+<main>
+    <section class="presentation">
+		<img src="/images/wide_banner.png">
+		<p>Unixcorn fournit des services respectueux de votre vie privée grâce au logiciel libre.</p>
+		<p>Nos serveurs sont hébergés en Europe, à Falkenstein, en Allemagne. 🇩🇪</p>
+	</section>
+	<section>
+		<h2 class="underline">Services</h2>
+		<ul class="services">
+			<% data.services.each do |s| %>
+				<% if !s.hide_on_homepage %>
+					<li class="service">
+						<h2><%= s.name %></h2>
+						<i class="fa fa-<%= s.icon %> fa-2x"></i>
+						<p><%= s.description %></p>
+						<p class="powered-by">Propulsé par <%= s.app %></p>
+						<a class="button" href="<%= s.url %>">Ouvrir</a>
+					</li>
+				<% end %>
+			<% end %>
+		</ul>
+	</section>
+	<section>
+		<h3>Vous souhaitez en savoir plus ?</h3>
+
+		<div class="flex">
+			<a class="button" href="/services">Nos services en détail</a>
+			<a class="button" href="https://status.unixcorn.org">Leur état en temps réel</a>
+			<a class="button" href="/infrastructure">Tout savoir sur notre infrastructure</a>
+		</div>
+	</section>
+	<section class="flex">
+		<article class="card">
+			<h2 class="underline">Support</h2>
+			<p>
+				Vous avez une question ou un problème&nbsp;? Nous serons ravis de vous aider.
+				Venez chattez en direct sur la <a href="https://chat.unixcorn.org">messagerie instantanée</a>, ou
+				parcourez le <a href="http://forum.unixcorn.org">forum de discussion</a>.
+			</ul>
+		</article>
+		<article class="card">
+			<h2 class="underline">Contribuer</h2>
+			<p>
+				Unixcorn est un projet Libre auquel⋅le chacun⋅e peut participer&nbsp;:
+				en écrivant de la <a href="https://doc.unixcorn.org">documentation</a>,
+				ou en donnant de l'argent sur <a href="https://liberapay.com/unixcorn-project/donate">Liberapay</a>
+				pour notre projet
+			</p>
+			</ul>
+		</article>
+	</section>
+</main>
