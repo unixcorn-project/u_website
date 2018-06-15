@@ -20,18 +20,32 @@ configure :build do
   activate :minify_javascript
 end
 
-activate :i18n, mount_at_root: :fr, langs: [:fr, :en]
+locales = [:fr, :en]
+activate :i18n, mount_at_root: locales[0], langs: locales
 
 set :markdown_engine, :kramdown
 
-activate :blog do |blog|
-  blog.sources = "localizable/blog/{lang}/{year}-{month}-{day}-{title}.html"
-  blog.permalink = "blog/{year}/{title}.html"
+# Adapted from https://github.com/middleman/middleman-blog/issues/343#issuecomment-383875168
+locales.each_with_index do |locale, index|
+  activate :blog do |blog|
+    # Locale path: first locale is mounted at root
+    path = index > 0 ? "#{locale}/" : ""
+    blog.name = "blog_#{locale}"
+    blog.permalink = "#{path}blog/{year}/{title}.html"
 
-  blog.layout = "blog_layout"
-  blog.taglink = "blog/tag/{tag}"
-  blog.tag_template = "blog/tag.html"
-  blog.paginate = true
+    blog.sources = "blog/#{locale}/{year}-{month}-{day}-{title}.html"
+    blog.layout = "blog_layout"
+
+    # Pagination
+    blog.paginate  = true
+
+    # Tags
+    blog.tag_template = "blog/tag.html"
+    blog.taglink      = "#{path}blog/tag/{tag}.html"
+    # Use the global Middleman I18n.locale instead of the lang in the
+    # article's frontmatter
+    blog.preserve_locale = true
+  end
 end
 
 activate :directory_indexes
