@@ -16,19 +16,19 @@ before_script:
 build:
   stage: build
   script:
-    - bundle exec middleman build
+    - bundle exec middleman build --verbose
 
 # To see if issues are coming from invalid articles or from somewhere else
 build_without_articles:
   stage: build
   script:
     - rm -rf source/blog
-    - bundle exec middleman build
+    - bundle exec middleman build --verbose
 
 deploy_preprod:
   stage: deploy
   script:
-    - bundle exec middleman deploy
+    - bundle exec middleman deploy --verbose
   environment:
     name: preproduction
     url: https://preprod.dev.unixcorn.org/
@@ -38,7 +38,7 @@ deploy_preprod:
 deploy_prod:
   stage: deploy
   script:
-    - bundle exec middleman deploy
+    - bundle exec middleman deploy --verbose
   environment:
     name: production
     url: https://unixcorn.org/
