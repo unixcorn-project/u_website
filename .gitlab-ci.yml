@@ -9,6 +9,8 @@ cache:
     - vendor
 
 before_script:
+  - apt-get update -yqqq
+  - apt-get install -y nodejs
   - bundle install --path vendor
 
 build:
