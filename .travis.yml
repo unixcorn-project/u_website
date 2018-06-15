@@ -1,7 +1,0 @@
-language: ruby
-rvm:
-  - 2.5.0
-cache: bundler
-script:
-  - git pull
-  - bundle exec middleman deploy
