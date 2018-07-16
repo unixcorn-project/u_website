@@ -12,21 +12,29 @@ Bonjour à toustes,
 Voici quelques nouvelles en ce chaud début d'été 2018.
 
 ### Infrastructure
+
 #### Infos diverses
 Encore beaucoup de changements depuis le début d'année, cependant nous voici stabiliséEs depuis environ trois mois chez [Hetzner](https://hetzner.com). L'hyperviseur retenu est celui de l'offre *EX41-SSD* à 47 euros/mois, avec ça on a en plus 500 Go d'espace de stockage pour les sauvegardes. La solution de conteneurisation retenue est le couple LXD/LXC, qui fonctionne à merveille. La métrologie est pour le moment fournie par [DataDog](https://datadoghq.com) (c'est du SaaS).
+
 #### Applicatifs
+
 ##### Mattermost
 Nous sommes récemment passés à la version 5.1, [au menu](https://mattermost.com/blog/mattermost-5-1-new-gif-selector-auto-linking-plugin-subpath-support-and-more/) quelques nouveautés et encore tout un lot de mises à jour de sécurité. Pour rappel, l'accès à ce service est libre. Vous pouvez y créer votre propre équipe et l'utiliser au sein de votre collectif.
+
 ##### HackMD
 Notre système de pads collaboratifs change de nom ! Le projet original deviens payant et est désormais sous licence privative uniquement, "hackmd-ce" est repris par la communauté puis renommé. Malheureusement [la dernière mise à jour](https://github.com/hackmdio/codimd/releases/tag/1.2.0) est bugguée. Il semble [manquer des parties importantes du script de migration](https://github.com/hackmdio/codimd/issues/895), après avoir planté le service pendant plus d'une semaine il a été remonté il y a peu en se basant sur la dernière sauvegarde saine. On attends donc des nouvelles avant d'avancer et de pousser CodiMD en production.
+
 ##### Nextcloud
-Notre service historique poursuit sa route et les mises à jour s'égrènes, sans aucun souci. Pas de grosses nouvelles de ce côté, à part la désactivation du service d'aggrégation de flux RSS du fait d'un problème d'exécution des tâches CRON sensées mettre à jour les flux... On recommande donc l'utilisation d'un client lourd sur votre périphérique personnel pour traiter vos flux.
+Notre service historique poursuit sa route et les mises à jour s'égrènes, sans aucun souci. Pas de grosses nouvelles de ce côté, à part la désactivation du service d'agrégation de flux RSS du fait d'un problème d'exécution des tâches CRON sensées mettre à jour les flux... On recommande donc l'utilisation d'un client lourd sur votre périphérique personnel pour traiter vos flux.
+
 ##### Mastodon
 Ici aussi rien de très intéressant, nous sommes à jour (v2.4.3). Il reste un bug à traiter concernant la disparition subite des emojis personnalisés de l'instance, ces derniers ne fonctionnent plus pour le moment.
 
 ### Collectif
+
 #### Association
 Peu d'avancées depuis l'entrevue parisienne fin mars, le projet d'association n'a pas bougé depuis les réflexions menées à ce moment là. Tout reste possible, il faut juste faire et aujourd'hui je n'ai pas l'énergie.
+
 #### Finances
 Notre système de don récurrent, fourni par [Liberapay](https://fr.liberapay.com/unixcorn-project) est en difficultés, tout est expliqué dans cet article (malheureusement rédigé uniquement en anglais) : https://medium.com/liberapay-blog/liberapay-is-in-trouble-b58b40714d82. Pas d'inquiétudes particulières, on trouvera autre chose. Juste, si vous nous donnez des sous avec ça, suivez les indications dans l'article pour ne rien perdre (si besoin d'aide, contactez-nous).
 
